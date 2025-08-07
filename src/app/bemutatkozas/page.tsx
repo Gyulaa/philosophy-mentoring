@@ -3,7 +3,7 @@ import React from 'react'
 function IntroPage() {
   return (
     <>
-      <section className="hero-bg text-white py-20 md:py-32 hero-text-bottom">
+      <section className="hero-bg text-white py-20 md:py-32">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">Gondolkodj velünk!</h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-center">Fedezd fel a filozófia világát egy középiskolásoknak szóló, interaktív online mentorprogram keretében.</p>

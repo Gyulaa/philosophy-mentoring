@@ -60,8 +60,10 @@ h3 {
     url("/assets/banner.jpg");
   background-size: cover;
   background-position: 50% 30%;
+  justify-content: flex-end !important;
+  padding-bottom: 5rem;
+  padding-top: 10rem;
 }
-
 /* Hero section with flexbox for vertical positioning */
 .hero-bg {
   display: flex !important;
@@ -72,7 +74,7 @@ h3 {
 
 .hero-text-bottom {
   justify-content: flex-end !important;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 /* Custom hero text positioning with flexbox */
