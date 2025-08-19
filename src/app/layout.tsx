@@ -27,7 +27,7 @@ const lora = Lora({
 
 
 export const metadata: Metadata = {
-  title: "Filozófiai Mentorprogram",
+  title: "FiloMento",
   description: "Filozófiai Mentorprogram Tájékozatató oldal",
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${lora.variable} antialiased`}>
         <header className="bg-[#0a2540] text-white shadow-md sticky top-0 z-50">
           <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 className="text-xl font-semibold">Filozófiai Mentorprogram</h1>
+            <h1 className="text-xl font-semibold">FiloMento</h1>
 
             <nav className="hidden md:flex space-x-6">
               <Link href="/bemutatkozas" className="hover:text-blue-300 font-medium">Diákoknak</Link>
