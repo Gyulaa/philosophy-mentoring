@@ -15,8 +15,7 @@ function KapcsolatPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900">Elérhetőségeink</h2>
             <div className="text-center text-lg text-gray-700 mb-12">
               <div className="mt-6 space-y-3">
-                <p className="font-bold">📧 E-mail: <a href="mailto:info@filozofiaimentorprogram.hu" className="text-indigo-600 hover:underline">info@filozofiaimentorprogram.hu</a></p>
-                <p className="font-bold">📞 Telefon: <a href="tel:+36-30-123-4567" className="text-indigo-600 hover:underline">+36 30 123 4567</a></p>
+                <p className="font-bold">📩 E-mail: <a href="mailto:filozofinformacio@gmail.com" className="text-indigo-600 hover:underline">filozofinformacio@gmail.com</a></p>
               </div>
             </div>
           </div>

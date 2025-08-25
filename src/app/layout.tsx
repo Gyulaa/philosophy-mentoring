@@ -60,12 +60,12 @@ export default function RootLayout({
           <div className="container mx-auto px-6 text-center">
             <p>2025 Filozófiai Mentorprogram</p>
             <p className="mt-2">
-              📞 Kapcsolat:{" "}
+              📩 Kapcsolat:{" "}
               <a
-                href="tel:+36-30-123-4567"
+                href="mailto:filozofinformacio@gmail.com"
                 className="text-white hover:text-blue-300 transition-colors"
               >
-                +36 30 123 4567
+                filozofinformacio@gmail.com
               </a>
             </p>
           </div>
