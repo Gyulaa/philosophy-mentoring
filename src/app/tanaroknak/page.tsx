@@ -31,7 +31,7 @@ function TanaroknakPage() {
                 is megtalálják számításukat, akárcsak, mint egy amolyan kiegészítéseként is kedvenc tárgyuknak. Az órák
                 alapvetően viedóhívásban fognak zajlani, feltehetőleg szombatonként, így kérjük Önöket, amennyiben
                 szükséges segítsék lehetőségükhöz mérten a tanulót, hogy rendelkezésére álljon a megfelelő technológiai
-                háttér. Ezentúl lesz egy közös Google classNameroom csoportunk is, ahova azokat az anyagokat fogjuk feltölteni a
+                háttér. Ezentúl lesz egy közös Google Classroom csoportunk is, ahova azokat az anyagokat fogjuk feltölteni a
                 diákoknak, amiket további olvasásra ajánlunk, de esetleg már nem fértek bele az órába.
               </p>
               <p>A filozófia órák mellett a másik lehetőség, amit a programunk kínál a tanulóknak az a személyes mentorálás. Itt elsősorban minden jelentkezőnek az érdeklődési körében kijelölt mentor segítene egy tudományos cikk elkészítésében a zárókonferenciára.</p>
