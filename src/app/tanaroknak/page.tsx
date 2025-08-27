@@ -34,12 +34,6 @@ function TanaroknakPage() {
                 háttér. Ezentúl lesz egy közös Google classNameroom csoportunk is, ahova azokat az anyagokat fogjuk feltölteni a
                 diákoknak, amiket további olvasásra ajánlunk, de esetleg már nem fértek bele az órába.
               </p>
-              <p>A program szerves részét képeznék még továbbá az órákhoz lazán kapcsolódó előadások, amiket filozófusok
-                és kutatók tartanának. Mivel kezdeményezésünk maga mögött tudhatja a Magyar Filozófiai Társaság és az
-                ELTE BTK Filozófia Intézetének támogatását, bízunk benne, hogy a fentemlített intézményeken és saját
-                kapcsolati hálóink bevonásával a diákoknak számos változatos és magas színvonalú extra alkalmakról tudunk
-                gondoskodni.
-              </p>
               <p>A filozófia órák mellett a másik lehetőség, amit a programunk kínál a tanulóknak az a személyes mentorálás. Itt elsősorban minden jelentkezőnek az érdeklődési körében kijelölt mentor segítene egy tudományos cikk elkészítésében a zárókonferenciára.</p>
               <p>A zárókonferencia a program végén kerülne megrendezésre, ahol a diákok
                 nem csak megismerkedhetnének egymás kutatásaival, de maguk is az év során egy adott kérdésben
