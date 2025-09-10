@@ -1,13 +1,13 @@
 import { NextResponse } from 'next/server'
 
-// Simple admin password (in production, use proper authentication)
-const ADMIN_PASSWORD = 'FiloMento2025Admin!'
+// Read admin password from environment variable
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
 
 export async function POST(request: Request) {
   try {
     const { password } = await request.json()
 
-    if (password !== ADMIN_PASSWORD) {
+    if (!ADMIN_PASSWORD || password !== ADMIN_PASSWORD) {
       return NextResponse.json({ error: 'Invalid password' }, { status: 401 })
     }
 

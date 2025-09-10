@@ -45,12 +45,8 @@ export default function AdminDashboard() {
                   <p className="text-sm text-gray-500">A weboldal tartalmának módosítása</p>
                 </div>
                 <a
-                  href="#edit-content"
+                  href="/admin/content"
                   className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    alert('Hamarosan elérhető! Egyelőre a tartalom szerkesztése a fájlokban történik.')
-                  }}
                 >
                   Szerkesztés
                 </a>
@@ -119,9 +115,7 @@ export default function AdminDashboard() {
                     A tartalom szerkesztése egyelőre a forrásfájlokban történik, de hamarosan 
                     elérhető lesz a vizuális szerkesztő.
                   </p>
-                  <div className="mt-3">
-                    <strong>Jelszó:</strong> FiloMento2025Admin!
-                  </div>
+                  {/* Admin password is managed via environment variables */}
                 </div>
               </div>
             </div>

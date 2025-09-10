@@ -112,13 +112,10 @@ export default function DynamicPage({ pageContent }: DynamicPageProps) {
           <div className="max-w-4xl mx-auto content-card">
             {contentSections.map((section, index) => (
               <div key={section.id}>
-                <SectionRenderer section={section} />
-                {/* Add separator between sections, except for the last one */}
-                {index < contentSections.length - 1 && 
-                 section.type !== 'button' && 
-                 contentSections[index + 1].type !== 'button' && (
+                {index > 0 && section.type !== 'button' && (
                   <div className="border-t my-12"></div>
                 )}
+                <SectionRenderer section={section} />
               </div>
             ))}
           </div>

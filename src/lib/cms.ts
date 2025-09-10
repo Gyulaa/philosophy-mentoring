@@ -30,6 +30,58 @@ const DATA_DIR = path.join(process.cwd(), 'data')
 const CONTENT_FILE = path.join(DATA_DIR, 'content.json')
 const SETTINGS_FILE = path.join(DATA_DIR, 'settings.json')
 
+// GitHub persistence configuration (free via GitHub repo)
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN
+const GITHUB_REPO = process.env.GITHUB_REPO // format: "owner/name"
+const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main'
+
+function isGitHubCmsEnabled(): boolean {
+  return Boolean(GITHUB_TOKEN && GITHUB_REPO)
+}
+
+function githubHeaders() {
+  return {
+    Authorization: `Bearer ${GITHUB_TOKEN}`,
+    Accept: 'application/vnd.github+json',
+    'Content-Type': 'application/json'
+  }
+}
+
+function getGithubContentUrl(filePath: string): string {
+  return `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}?ref=${encodeURIComponent(GITHUB_BRANCH)}`
+}
+
+async function githubReadJson(filePath: string): Promise<any | null> {
+  const url = getGithubContentUrl(filePath)
+  const res = await fetch(url, { headers: githubHeaders(), cache: 'no-store' })
+  if (res.status === 404) return null
+  if (!res.ok) throw new Error(`GitHub read failed: ${res.status}`)
+  const data = await res.json() as { content: string }
+  const decoded = Buffer.from(data.content, 'base64').toString('utf8')
+  return JSON.parse(decoded)
+}
+
+async function githubWriteJson(filePath: string, json: unknown): Promise<void> {
+  // Get existing sha if present
+  const getUrl = getGithubContentUrl(filePath)
+  let sha: string | undefined
+  const getRes = await fetch(getUrl, { headers: githubHeaders(), cache: 'no-store' })
+  if (getRes.ok) {
+    const existing = await getRes.json() as { sha?: string }
+    sha = existing.sha
+  }
+
+  const putUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`
+  const body = {
+    message: `chore(cms): update ${filePath}`,
+    content: Buffer.from(JSON.stringify(json, null, 2), 'utf8').toString('base64'),
+    branch: GITHUB_BRANCH,
+    sha
+  }
+  const putRes = await fetch(putUrl, { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) })
+  if (!putRes.ok) throw new Error(`GitHub write failed: ${putRes.status}`)
+}
+
 // Ensure data directory exists
 async function ensureDataDir() {
   try {
@@ -99,13 +151,21 @@ const defaultSettings: SiteSettings = {
 
 // Load content from file
 export async function loadContent(): Promise<Record<string, PageContent>> {
+  // GitHub-backed read if configured
+  if (isGitHubCmsEnabled()) {
+    try {
+      const gh = await githubReadJson('data/content.json')
+      if (gh) return gh
+    } catch {
+      // fall back to defaults below
+    }
+  }
+
   await ensureDataDir()
-  
   try {
     const data = await fs.readFile(CONTENT_FILE, 'utf8')
     return JSON.parse(data)
   } catch {
-    // File doesn't exist, create with default content
     await saveContent(defaultContent)
     return defaultContent
   }
@@ -113,19 +173,29 @@ export async function loadContent(): Promise<Record<string, PageContent>> {
 
 // Save content to file
 export async function saveContent(content: Record<string, PageContent>): Promise<void> {
+  if (isGitHubCmsEnabled()) {
+    await githubWriteJson('data/content.json', content)
+    return
+  }
   await ensureDataDir()
   await fs.writeFile(CONTENT_FILE, JSON.stringify(content, null, 2))
 }
 
 // Load settings from file
 export async function loadSettings(): Promise<SiteSettings> {
+  if (isGitHubCmsEnabled()) {
+    try {
+      const gh = await githubReadJson('data/settings.json')
+      if (gh) return gh
+    } catch {
+      // fall back
+    }
+  }
   await ensureDataDir()
-  
   try {
     const data = await fs.readFile(SETTINGS_FILE, 'utf8')
     return JSON.parse(data)
   } catch {
-    // File doesn't exist, create with default settings
     await saveSettings(defaultSettings)
     return defaultSettings
   }
@@ -133,6 +203,10 @@ export async function loadSettings(): Promise<SiteSettings> {
 
 // Save settings to file
 export async function saveSettings(settings: SiteSettings): Promise<void> {
+  if (isGitHubCmsEnabled()) {
+    await githubWriteJson('data/settings.json', settings)
+    return
+  }
   await ensureDataDir()
   await fs.writeFile(SETTINGS_FILE, JSON.stringify(settings, null, 2))
 }

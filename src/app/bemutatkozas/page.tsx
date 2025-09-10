@@ -2,6 +2,8 @@ import React from 'react'
 import { getPageContent } from '@/lib/cms'
 import DynamicPage from '@/components/DynamicPage'
 
+export const dynamic = 'force-dynamic'
+
 export default async function IntroPage() {
   let pageContent = await getPageContent('bemutatkozas')
   
