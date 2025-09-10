@@ -1,13 +1,14 @@
 import { cookies } from 'next/headers'
 
-export function isAuthenticated(): boolean {
-  const cookieStore = cookies()
+export async function isAuthenticated(): Promise<boolean> {
+  const cookieStore = await cookies()
   const authCookie = cookieStore.get('admin-auth')
   return authCookie?.value === 'authenticated'
 }
 
-export function requireAuth() {
-  if (!isAuthenticated()) {
+export async function requireAuth(): Promise<void> {
+  const ok = await isAuthenticated()
+  if (!ok) {
     throw new Error('Authentication required')
   }
 }

@@ -4,7 +4,7 @@ import { requireAuth } from '@/lib/auth'
 
 export async function GET() {
   try {
-    requireAuth()
+    await requireAuth()
     const pages = await getAllPages()
     return NextResponse.json({ pages })
   } catch (error) {
@@ -17,7 +17,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    requireAuth()
+    await requireAuth()
     const content = await request.json()
     await saveContent(content)
     return NextResponse.json({ success: true })
