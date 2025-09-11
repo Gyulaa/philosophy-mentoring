@@ -54,14 +54,38 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Tanároknak",
-        "subtitle": "Információk és együttműködési lehetőségek"
+        "title": "Segítsen a jövő gondolkodóinak kibontakozni!",
+        "subtitle": "Ismerje meg programunkat, és ajánlja tehetséges diákjainak a filozófia világának felfedezését."
       },
       {
         "id": "intro",
         "type": "text",
-        "title": "Kapcsolódás",
-        "content": "Tájékoztató a programról tanároknak."
+        "title": "A programról tanároknak",
+        "content": "A programot olyan egyetemisták hozták létre, akiknek meghatározó élmény volt az a gimnáziumi filozófia oktatás, melyre az ország legtöbb intézménye ma már sajnos nem tud lehetőséget biztosítani a diákoknak. Célunk azokhoz a tehetséges és érdeklődő fiatalokhoz eljuttatni a „bölcsesség szeretetét\", akik sosem találkoznának a filozófiával, vagy csak nem elég korán. Bár nem vagyunk tanárok, mégis úgy gondoljuk, hogy értékes segítséget biztosíthatunk a jelentkezőinknek tudásuk elmélyítésében a filozófia terén és egy tudatos, kritikus és reflexív magatartás megerősítésében; mindezt online formában, hogy az ország minden pontjáról be lehessen kapcsolódni bárkinek és ezzel egyben valamilyen szinten támogathassuk a tehetséggondozásban dolgozó pedagógusok munkáját."
+      },
+      {
+        "id": "info-box-1757593236924",
+        "type": "info-box",
+        "content": "Fontos itt megjegyezni, hogy a jelentkezőktől a programszervező és lebonyolítói semmilyen anyagi honoráriumot nem kérnek vagy fogadnak el! Valljuk, hogy a szabad gondolkodás és a tudás mindenkié!"
+      },
+      {
+        "id": "text-1757593251924",
+        "type": "text",
+        "title": "Új szekció",
+        "content": "Az Ön segítségét abban kérjük, hogy amennyiben van olyan tehetséges tanuló az Ön intézményében, aki a tanulmányi versenyeken vagy az órákon különös érzékenységet mutatott a filozófiai jellegű problémák irányába, annak kérjük ajánlja figyelemébe ezt a lehetőséget. Engedje meg, hogy meggyőzzük ezzel kapcsolatban!\n\nA program gerincét azok a fakultáció típusú alkalmak fogják alkotni, amiket hétről hétre egymás között felosztva fogunk tartani. A filozófiának kronologikus és tematikus megközelítését fogjuk keverni, ezáltal igyekszünk a diákokhoz egyszerre közelebb hozni a filozófia klasszikusait és próbáljuk közben interdiszciplináris kérdésekbe ágyazva trenírozni a kritikai gondolkodás, érveléstechnikát, esszéírást és a matematikai logikát. Fontos, hogy kis csapatunkban azon a véleményen vagyunk, hogy az analitikus és kontinentális filozófiai ugyanolyan jelentőséggel bír, tehát velünk a reál és humán beállítottságú jelentkezők is megtalálják számításukat, akárcsak, mint egy amolyan kiegészítéseként is kedvenc tárgyuknak. Az órák alapvetően viedóhívásban fognak zajlani, feltehetőleg szombatonként, így kérjük Önöket, amennyiben szükséges segítsék lehetőségükhöz mérten a tanulót, hogy rendelkezésére álljon a megfelelő technológiai háttér. Ezentúl lesz egy közös Google Classroom csoportunk is, ahova azokat az anyagokat fogjuk feltölteni a diákoknak, amiket további olvasásra ajánlunk, de esetleg már nem fértek bele az órába.\n\nA filozófia órák mellett a másik lehetőség, amit a programunk kínál a tanulóknak az a személyes mentorálás. Itt elsősorban minden jelentkezőnek az érdeklődési körében kijelölt mentor segítene egy tudományos cikk elkészítésében a zárókonferenciára.\n\nA zárókonferencia a program végén kerülne megrendezésre, ahol a diákok nem csak megismerkedhetnének egymás kutatásaival, de maguk is az év során egy adott kérdésben irányítottan elmélyülhetnének és kidolgozhatnák azzal kapcsolatos gondolataikat. Ennek nyomán fejlődne az íráskészségük, érveléstechnikájuk, kritikai gondolkodásuk, megismernék, hogy kell különböző álláspontokat azokat tiszteletben tartva, logikusan és következetesen felépítve ütköztetni vagy kritizálni, hivatkozni vagy éppen saját véleményt megfogalmazni egy filozófiai kérdésben. A konferencia továbbá nem pusztán a retorikai képességük fejlesztése miatt fontos, azt is megtanulják, hogyan kell saját kutatásukat tömören és mindenki számára érthetően bemutatni. Így a program végére minden tanulónak lenne egy cikke és egy igazolása a programban és a konferencián történő részvételről, amik későbbi egyetemi vagy ösztöndíj jelentkezéseknél hasznukra vállhat az akadémiai világban.\n\nA programban mentorálást vállaló hallgatókban közös egy alapvető filozófiai háttérismeret, ám személyes érdeklődési köreink nagyon szerte ágazóak. Így tényleg a humán és reál érdeklődésű diákok számára is tudunk alkalmas mentort biztosítani, legyen szó metafizikáról, ismeretelméletről, tudományfilozófiáról, matematikai logikáról, nyelvfilozófiáról, etikáról, politikaifilozófiáról, társadalomfilozófiáról, jogfilozófiáról, esztétikáról, művészetfilozófiáról.\n\nAkinek pedig lesz kedve és ideje, annak segítjük az OKTV-re vagy a filozófia érettségire való felkészülését külön csoportos alkalmakon. Mivel az OKTV kiírás tanári segítség szervezésben"
+      },
+      {
+        "id": "highlight-1757593285380",
+        "type": "highlight",
+        "title": "",
+        "content": "Mindemellett megköszönjük, amennyiben tetszik Önnek a kezdeményezésünk, ha megosztja ezt az oldalt olyan ismerősökkel, pedagógusokkal, versenyszervezőkkel, táborszervezőkkel vagy tehetséggondozásban dolgozókkal, akik még több fiatalhoz el tudják juttatni ezt a teljesen nyílt, pro bono lehetőséget.",
+        "isHighlighted": true
+      },
+      {
+        "id": "text-1757593310396",
+        "type": "text",
+        "title": "Kiknek a jelentkezését várjuk?",
+        "content": "Mivel a filozófia oktatás ma már igen ritkán valósul csak meg, a diákoktól semmilyen előképzettséget nem várunk el, ám nagyon örülünk olyan jelentkezőknek is, akiknek már kifejezett érdeklődésük van a filozófia iránt. Főleg olyan diákokat várunk, akik motiváltak erre az extra tanulásra, jó absztrakciós képességgel rendelkeznek és az órákon gyakran adnak hangot saját véleményüknek, esetleg egyedi ötletekkel, bizonyításokkal vagy megközelítésekkel tud előállni. Ezeket a képességeket mind fontosabbnak véljük a tanulmányi átlagnál.\n\nAmennyiben Ön pedagógus vagy olyan személy, akire tanulmányi értelemben a jelentkező mentoraként tekinthet, annyiban egy, a diáknak a programhoz írt ajánlólevéllel megkönnyítheti a mi munkánkat és egy értékes visszajelzéssel is szolgálhat magának a jelentkezőnek is."
       }
     ]
   },
