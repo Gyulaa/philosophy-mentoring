@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import AdminLayout from '@/components/admin/AdminLayout'
+import Link from 'next/link'
 import type { PageContent, ContentSection } from '@/lib/cms'
 
 type ContentMap = Record<string, PageContent>
@@ -16,6 +17,8 @@ export default function AdminContentEditor() {
   const [error, setError] = useState<string>('')
   const [success, setSuccess] = useState<string>('')
   const [lastAddedId, setLastAddedId] = useState<string>('')
+  const [newPageId, setNewPageId] = useState('')
+  const [newPageTitle, setNewPageTitle] = useState('')
 
   useEffect(() => {
     const fetchPages = async () => {
@@ -103,6 +106,10 @@ export default function AdminContentEditor() {
       section = { ...base, content: '' }
     } else if (newType === 'button') {
       section = { ...base, buttonText: 'Gomb', buttonLink: '/' }
+    } else if (newType === 'embed') {
+      section = { ...base, title: 'Beágyazott űrlap', embedUrl: '', height: 1880 }
+    } else if (newType === 'image') {
+      section = { ...base, title: 'Kép', imageUrl: '', alt: '' }
     }
     setDraft({ ...draft, sections: [...draft.sections, section] })
     setLastAddedId(section.id)
@@ -130,13 +137,64 @@ export default function AdminContentEditor() {
     }
   }
 
+  const handleCreatePage = async () => {
+    setError(''); setSuccess('')
+    const id = newPageId.trim()
+    const title = newPageTitle.trim() || newPageId.trim()
+    if (!id) { setError('Adj meg egy oldal azonosítót'); return }
+    if (contentMap[id]) { setError('Ez az oldal már létezik'); return }
+    const newPage: PageContent = {
+      id,
+      title: title || id,
+      sections: [ { id: 'hero', type: 'hero', title: title || id, subtitle: '' } ]
+    }
+    const updated = { ...contentMap, [id]: newPage }
+    try {
+      const res = await fetch('/api/admin/content', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(updated)
+      })
+      if (!res.ok) throw new Error('Mentés sikertelen')
+      setContentMap(updated)
+      setPages(Object.values(updated))
+      setSelectedId(id)
+      setDraft(structuredClone(newPage))
+      setNewPageId(''); setNewPageTitle('')
+      setSuccess('Új oldal létrehozva')
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Hiba az oldal létrehozásakor')
+    }
+  }
+
+  const handleDeletePage = async () => {
+    if (!selectedPage) return
+    const id = selectedPage.id
+    const { [id]: _, ...rest } = contentMap
+    try {
+      const res = await fetch('/api/admin/content', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(rest)
+      })
+      if (!res.ok) throw new Error('Törlés sikertelen')
+      setContentMap(rest)
+      setPages(Object.values(rest))
+      const first = Object.values(rest)[0]
+      setSelectedId(first ? first.id : '')
+      setDraft(first ? structuredClone(first) : null)
+      setSuccess('Oldal törölve')
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Hiba az oldal törlésekor')
+    }
+  }
+
   const selectedPage = useMemo(() => draft, [draft])
 
   return (
     <AdminLayout>
       <div className="px-4 py-6 sm:px-0">
         <div className="border-4 border-dashed border-gray-200 rounded-lg p-6">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Tartalom szerkesztése</h1>
+          <div className="flex items-center justify-between mb-4">
+            <h1 className="text-2xl font-bold text-gray-900">Tartalom szerkesztése</h1>
+            <Link href="/admin/dashboard" className="text-sm px-3 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-gray-300">Vissza a Dashboardra</Link>
+          </div>
 
           {loading && (
             <div className="text-gray-600">Betöltés…</div>
@@ -174,6 +232,10 @@ export default function AdminContentEditor() {
 
               {selectedPage && (
                 <div className="bg-white shadow rounded-lg p-5 space-y-6">
+                  <div className="flex items-center justify-between">
+                    <div className="text-sm text-gray-600">Aktuális oldal: <span className="font-medium">{selectedPage.id}</span></div>
+                    <button onClick={handleDeletePage} className="text-xs px-3 py-2 rounded bg-red-600 text-white hover:bg-red-700">Oldal törlése</button>
+                  </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Oldal címe</label>
                     <input
@@ -195,6 +257,8 @@ export default function AdminContentEditor() {
                       <option value="highlight">highlight</option>
                       <option value="info-box">info-box</option>
                       <option value="button">button</option>
+                      <option value="embed">embed</option>
+                      <option value="image">image</option>
                     </select>
                     <button
                       onClick={handleAddSection}
@@ -306,6 +370,77 @@ export default function AdminContentEditor() {
                                 </div>
                               </div>
                             )}
+
+                            {section.type === 'embed' && (
+                              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <div className="md:col-span-2">
+                                  <label className="block text-xs font-medium text-gray-700 mb-1">Beágyazott URL</label>
+                                  <input
+                                    className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm"
+                                    placeholder="https://docs.google.com/forms/..."
+                                    value={section.embedUrl || ''}
+                                    onChange={(e) => handleSectionChange(idx, { embedUrl: e.target.value })}
+                                  />
+                                </div>
+                                <div>
+                                  <label className="block text-xs font-medium text-gray-700 mb-1">Magasság (px)</label>
+                                  <input
+                                    type="number"
+                                    className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm"
+                                    value={section.height ?? 1880}
+                                    onChange={(e) => handleSectionChange(idx, { height: Number(e.target.value || 0) })}
+                                  />
+                                </div>
+                              </div>
+                            )}
+
+                            {section.type === 'image' && (
+                              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <div className="md:col-span-2">
+                                  <label className="block text-xs font-medium text-gray-700 mb-1">Kép URL</label>
+                                  <div className="flex gap-2">
+                                    <input
+                                      className="flex-1 border border-gray-300 rounded-md px-3 py-2 text-sm"
+                                      placeholder="https://.../image.jpg"
+                                      value={section.imageUrl || ''}
+                                      onChange={(e) => handleSectionChange(idx, { imageUrl: e.target.value })}
+                                    />
+                                    <label className="inline-flex items-center px-3 py-2 text-sm rounded-md bg-gray-100 hover:bg-gray-200 cursor-pointer">
+                                      <input
+                                        type="file"
+                                        accept="image/*"
+                                        className="hidden"
+                                        onChange={async (e) => {
+                                          const file = e.target.files?.[0]
+                                          if (!file) return
+                                          const form = new FormData()
+                                          form.append('file', file)
+                                          try {
+                                            const res = await fetch('/api/admin/upload', { method: 'POST', body: form })
+                                            if (!res.ok) throw new Error('Feltöltés sikertelen')
+                                            const data = await res.json() as { url: string }
+                                            handleSectionChange(idx, { imageUrl: data.url })
+                                          } catch (err) {
+                                            console.error(err)
+                                          } finally {
+                                            e.currentTarget.value = ''
+                                          }
+                                        }}
+                                      />
+                                      Feltöltés
+                                    </label>
+                                  </div>
+                                </div>
+                                <div>
+                                  <label className="block text-xs font-medium text-gray-700 mb-1">Alt szöveg</label>
+                                  <input
+                                    className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm"
+                                    value={section.alt || ''}
+                                    onChange={(e) => handleSectionChange(idx, { alt: e.target.value })}
+                                  />
+                                </div>
+                              </div>
+                            )}
                           </div>
                         </div>
                       )
@@ -313,6 +448,8 @@ export default function AdminContentEditor() {
                   </div>
                 </div>
               )}
+
+              
             </div>
           )}
         </div>
