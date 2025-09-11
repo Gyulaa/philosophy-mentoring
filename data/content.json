@@ -125,10 +125,11 @@
         "subtitle": "Kérdésed van a programmal, a jelentkezéssel vagy bármi mással kapcsolatban? Lépj velünk kapcsolatba!"
       },
       {
-        "id": "email",
-        "type": "info-box",
+        "id": "highlight-1757593478836",
+        "type": "highlight",
+        "title": "Elérhetőségeink",
         "content": "📩 E-mail: filozofinformacio@gmail.com",
-        "title": "Elérhetőségeink"
+        "isHighlighted": true
       }
     ]
   }
