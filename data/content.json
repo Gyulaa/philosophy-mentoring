@@ -44,6 +44,13 @@
         "type": "button",
         "buttonText": "Jelentkezés",
         "buttonLink": "/jelentkezes"
+      },
+      {
+        "id": "image-1757594107380",
+        "type": "image",
+        "title": "Kép",
+        "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhu.m.wikipedia.org%2Fwiki%2FF%25C3%25A1jl%3A%2522The_School_of_Athens%2522_by_Raffaello_Sanzio_da_Urbino.jpg&psig=AOvVaw0RAseWMqnecJtJQCmtatMp&ust=1757680552792000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCCjbrc0I8DFQAAAAAdAAAAABAE",
+        "alt": "Teszt Kép Beillesztés"
       }
     ]
   },
