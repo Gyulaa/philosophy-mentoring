@@ -46,5 +46,58 @@
         "buttonLink": "/jelentkezes"
       }
     ]
+  },
+  "tanaroknak": {
+    "id": "tanaroknak",
+    "title": "Tanároknak",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Tanároknak",
+        "subtitle": "Információk és együttműködési lehetőségek"
+      },
+      {
+        "id": "intro",
+        "type": "text",
+        "title": "Kapcsolódás",
+        "content": "Tájékoztató a programról tanároknak."
+      }
+    ]
+  },
+  "jelentkezes": {
+    "id": "jelentkezes",
+    "title": "Jelentkezés",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Jelentkezz a programra!",
+        "subtitle": ""
+      },
+      {
+        "id": "how",
+        "type": "text",
+        "title": "A jelentkezés menete",
+        "content": "A jelentkezés során a diákoknak először egy adatlapot kell kitölteni. Ebben nevükön, elérhetőségükön és oktatási intézményükön kívül nem kérünk el tőlük személyes adatokat. Itt leginkább számunkra fontos visszajelzésre lesz lehetőség, honnan hallottak a programról, miért javasolták nekik etc.\n\n\nA második részben viszont egy maximum 2000 karakteres rövid írást fogunk tőlük kérni motivációjukról, a programmal kapcsolatos elvárásaikról, jövőbeli terveikről és eddigi munkáikról. Ennek fő célja, hogy megismerjük érdeklődési körüket, azonban ezzel egyben szándékunk is mérni, a diák mennyire tudja felmérni, hogy mennyire való számára a program. Az írásművek a Personal Statment műfaját hivatottak imitálni, amely egy előzetes képet ad nekünk arról, hogy a jelentkezőt hogyan kell továbbfejlesztenünk ebben a műfajban, mivel a filozófiai írásművek mellett fontos képességnek tartjuk, hogy későbbi ösztöndíj jelentkezésekhez vagy kutatási tervezetek megíráshoz megfelelő tudással lássuk el őket a személyes mentorálás során."
+      }
+    ]
+  },
+  "kapcsolat": {
+    "id": "kapcsolat",
+    "title": "Kapcsolat",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Kapcsolat",
+        "subtitle": "Vedd fel velünk a kapcsolatot"
+      },
+      {
+        "id": "email",
+        "type": "info-box",
+        "content": "E-mail: filozofinformacio@gmail.com"
+      }
+    ]
   }
 }
