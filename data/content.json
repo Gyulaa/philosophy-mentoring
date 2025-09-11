@@ -46,11 +46,11 @@
         "buttonLink": "/jelentkezes"
       },
       {
-        "id": "image-1757594107380",
+        "id": "image-1757594691444",
         "type": "image",
         "title": "Kép",
-        "imageUrl": "https://drive.google.com/file/d/1gqcSesMhuvknG7i85-PlzQwOpIGGe8Kl/view?usp=sharing",
-        "alt": "Teszt Kép Beillesztés"
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1757594724801__The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg",
+        "alt": ""
       }
     ]
   },
