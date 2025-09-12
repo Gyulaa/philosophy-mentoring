@@ -31,6 +31,13 @@
       "href": "/kapcsolat",
       "visible": true,
       "order": 4
+    },
+    {
+      "id": "Test002",
+      "label": "test002",
+      "href": "/test002",
+      "visible": true,
+      "order": 5
     }
   ]
 }
