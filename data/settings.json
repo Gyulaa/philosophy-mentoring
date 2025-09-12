@@ -5,13 +5,6 @@
   "footerText": "2025 Filozófiai Mentorprogram",
   "navigation": [
     {
-      "id": "tanaroknak",
-      "label": "Tanároknak",
-      "href": "/tanaroknak",
-      "visible": true,
-      "order": 2
-    },
-    {
       "id": "bemutatkozas",
       "label": "Diákoknak",
       "href": "/bemutatkozas",
@@ -19,18 +12,25 @@
       "order": 1
     },
     {
+      "id": "tanaroknak",
+      "label": "Tanároknak",
+      "href": "/tanaroknak",
+      "visible": true,
+      "order": 2
+    },
+    {
       "id": "jelentkezes",
       "label": "Jelentkezés",
       "href": "/jelentkezes",
       "visible": true,
-      "order": 3
+      "order": 4
     },
     {
       "id": "Test002",
       "label": "test002",
       "href": "/test002",
       "visible": false,
-      "order": 4
+      "order": 3
     },
     {
       "id": "kapcsolat",
