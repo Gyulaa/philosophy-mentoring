@@ -132,23 +132,5 @@
         "isHighlighted": true
       }
     ]
-  },
-  "Test001": {
-    "id": "Test001",
-    "title": "Test001",
-    "sections": [
-      {
-        "id": "hero",
-        "type": "hero",
-        "title": "Test001",
-        "subtitle": "asd"
-      },
-      {
-        "id": "text-1757681631794",
-        "type": "text",
-        "title": "Új szekció",
-        "content": "test"
-      }
-    ]
   }
 }
