@@ -132,5 +132,17 @@
         "isHighlighted": true
       }
     ]
+  },
+  "test": {
+    "id": "test",
+    "title": "test",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "test",
+        "subtitle": ""
+      }
+    ]
   }
 }
