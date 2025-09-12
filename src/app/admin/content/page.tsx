@@ -109,7 +109,7 @@ export default function AdminContentEditor() {
     } else if (newType === 'embed') {
       section = { ...base, title: 'Beágyazott űrlap', embedUrl: '', height: 1880 }
     } else if (newType === 'image') {
-      section = { ...base, title: 'Kép', imageUrl: '', alt: '' }
+      section = { ...base, title: 'Kép', imageUrl: '', description: '', imageWidth: 640, imageHeight: 360 }
     }
     setDraft({ ...draft, sections: [...draft.sections, section] })
     setLastAddedId(section.id)
@@ -193,7 +193,6 @@ export default function AdminContentEditor() {
         <div className="border-4 border-dashed border-gray-200 rounded-lg p-6">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-2xl font-bold text-gray-900">Tartalom szerkesztése</h1>
-            <Link href="/admin/dashboard" className="text-sm px-3 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-gray-300">Vissza a Dashboardra</Link>
           </div>
 
           {loading && (
@@ -395,8 +394,8 @@ export default function AdminContentEditor() {
                             )}
 
                             {section.type === 'image' && (
-                              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                                <div className="md:col-span-2">
+                              <div className="space-y-3">
+                                <div>
                                   <label className="block text-xs font-medium text-gray-700 mb-1">Kép URL</label>
                                   <div className="flex gap-2">
                                     <input
@@ -431,12 +430,35 @@ export default function AdminContentEditor() {
                                     </label>
                                   </div>
                                 </div>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                  <div>
+                                    <label className="block text-xs font-medium text-gray-700 mb-1">Szélesség (px)</label>
+                                    <input
+                                      type="number"
+                                      min={1}
+                                      className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm"
+                                      value={section.imageWidth ?? 640}
+                                      onChange={(e) => handleSectionChange(idx, { imageWidth: Number(e.target.value || 0) })}
+                                    />
+                                  </div>
+                                  <div>
+                                    <label className="block text-xs font-medium text-gray-700 mb-1">Magasság (px) – opcionális</label>
+                                    <input
+                                      type="number"
+                                      min={0}
+                                      className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm"
+                                      value={section.imageHeight ?? ''}
+                                      onChange={(e) => handleSectionChange(idx, { imageHeight: e.target.value === '' ? undefined : Number(e.target.value) })}
+                                    />
+                                  </div>
+                                </div>
                                 <div>
-                                  <label className="block text-xs font-medium text-gray-700 mb-1">Alt szöveg</label>
+                                  <label className="block text-xs font-medium text-gray-700 mb-1">Rövid leírás (kép alatt szürkével)</label>
                                   <input
                                     className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm"
-                                    value={section.alt || ''}
-                                    onChange={(e) => handleSectionChange(idx, { alt: e.target.value })}
+                                    placeholder="Rövid leírás..."
+                                    value={section.description || ''}
+                                    onChange={(e) => handleSectionChange(idx, { description: e.target.value })}
                                   />
                                 </div>
                               </div>

@@ -79,7 +79,7 @@ function SectionRenderer({ section }: { section: ContentSection }) {
 
     case 'button':
       return (
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 mb-10 md:mb-14">
           {section.buttonText && section.buttonLink && (
             <div id="apply-btn-container">
               <Link 
@@ -114,21 +114,31 @@ function SectionRenderer({ section }: { section: ContentSection }) {
 
     case 'image':
       return (
-        <div className="flex justify-center">
+        <div className="flex justify-center my-10 md:my-14">
           {section.imageUrl && (() => {
             let src = section.imageUrl as string
             const match = src.match(/drive\.google\.com\/file\/d\/([^/]+)\//)
             if (match && match[1]) {
               src = `https://drive.google.com/uc?export=view&id=${match[1]}`
             }
+            const width = section.imageWidth || 640
+            const height = section.imageHeight
             return (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={src}
-                alt={section.alt || section.title || ''}
-                className="max-w-full h-auto rounded"
-                referrerPolicy="no-referrer"
-              />
+              <div className="w-full flex flex-col items-center" style={{ maxWidth: `${width}px` }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={section.title || ''}
+                  width={width}
+                  height={height || undefined}
+                  className="rounded"
+                  style={{ width: `${width}px`, height: height ? `${height}px` : 'auto' }}
+                  referrerPolicy="no-referrer"
+                />
+                {section.description && (
+                  <p className="mt-2 text-sm text-gray-500 text-center">{section.description}</p>
+                )}
+              </div>
             )
           })()}
         </div>
@@ -153,10 +163,13 @@ export default function DynamicPage({ pageContent }: DynamicPageProps) {
           <div className="max-w-4xl mx-auto content-card">
             {contentSections.map((section, index) => (
               <div key={section.id}>
-                {index > 0 && section.type !== 'button' && (
+                {index > 0 && section.type !== 'button' && section.type !== 'image' && (
                   <div className="border-t my-12"></div>
                 )}
                 <SectionRenderer section={section} />
+                {index < contentSections.length - 1 && section.type !== 'button' && section.type !== 'image' && (
+                  <div className="border-t my-12"></div>
+                )}
               </div>
             ))}
           </div>

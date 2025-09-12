@@ -22,7 +22,13 @@ export interface ContentSection {
   height?: number
   // Image-specific
   imageUrl?: string
+  // Deprecated in UI but kept for backward compatibility
   alt?: string
+  // New fields for richer image control
+  description?: string
+  // Preferred pixel sizing
+  imageWidth?: number
+  imageHeight?: number
 }
 
 export interface SiteSettings {

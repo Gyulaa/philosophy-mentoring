@@ -65,6 +65,12 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               >
                 Előnézet
               </Link>
+              <Link
+                href="/admin/dashboard"
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Vissza a Dashboardra
+              </Link>
               <button
                 onClick={handleLogout}
                 className="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-sm font-medium"
