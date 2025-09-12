@@ -132,5 +132,17 @@
         "isHighlighted": true
       }
     ]
+  },
+  "test": {
+    "id": "test",
+    "title": "Teszt Oldal",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Teszt Oldal",
+        "subtitle": ""
+      }
+    ]
   }
 }
