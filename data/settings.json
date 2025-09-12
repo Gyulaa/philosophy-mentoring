@@ -9,14 +9,14 @@
       "label": "Diákoknak",
       "href": "/bemutatkozas",
       "visible": true,
-      "order": 1
+      "order": 2
     },
     {
       "id": "tanaroknak",
       "label": "Tanároknak",
       "href": "/tanaroknak",
       "visible": true,
-      "order": 2
+      "order": 1
     },
     {
       "id": "jelentkezes",
