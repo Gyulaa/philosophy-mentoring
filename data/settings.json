@@ -19,25 +19,18 @@
       "order": 2
     },
     {
-      "id": "Test002",
-      "label": "test002",
-      "href": "/test002",
-      "visible": false,
-      "order": 3
-    },
-    {
       "id": "jelentkezes",
       "label": "Jelentkezés",
       "href": "/jelentkezes",
       "visible": true,
-      "order": 4
+      "order": 3
     },
     {
       "id": "kapcsolat",
       "label": "Kapcsolat",
       "href": "/kapcsolat",
       "visible": true,
-      "order": 5
+      "order": 4
     }
   ]
 }
