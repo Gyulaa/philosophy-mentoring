@@ -1,0 +1,36 @@
+{
+  "siteName": "FiloMento",
+  "siteDescription": "Filozófiai Mentorprogram Tájékozatató oldal",
+  "contactEmail": "filozofinformacio@gmail.com",
+  "footerText": "2025 Filozófiai Mentorprogram",
+  "navigation": [
+    {
+      "id": "bemutatkozas",
+      "label": "Diákoknak",
+      "href": "/bemutatkozas",
+      "visible": true,
+      "order": 1
+    },
+    {
+      "id": "tanaroknak",
+      "label": "Tanároknak",
+      "href": "/tanaroknak",
+      "visible": true,
+      "order": 2
+    },
+    {
+      "id": "jelentkezes",
+      "label": "Jelentkezés",
+      "href": "/jelentkezes",
+      "visible": true,
+      "order": 3
+    },
+    {
+      "id": "kapcsolat",
+      "label": "Kapcsolat",
+      "href": "/kapcsolat",
+      "visible": true,
+      "order": 4
+    }
+  ]
+}
