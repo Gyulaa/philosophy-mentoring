@@ -44,6 +44,17 @@
         "type": "button",
         "buttonText": "Jelentkezés",
         "buttonLink": "/jelentkezes"
+      },
+      {
+        "id": "image-1757677611074",
+        "type": "image",
+        "title": "Kép",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1757678699305__The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg",
+        "alt": "",
+        "ratio": "16:9",
+        "imageWidth": 100,
+        "imageHeight": 150,
+        "description": "Athéni Iskola, teszt"
       }
     ]
   },
