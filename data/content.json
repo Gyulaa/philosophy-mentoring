@@ -132,17 +132,5 @@
         "isHighlighted": true
       }
     ]
-  },
-  "Test": {
-    "id": "Test",
-    "title": "Test",
-    "sections": [
-      {
-        "id": "hero",
-        "type": "hero",
-        "title": "Test",
-        "subtitle": "Így szólott Zarathustra"
-      }
-    ]
   }
 }
