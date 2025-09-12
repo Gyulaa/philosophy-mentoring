@@ -31,11 +31,20 @@ export interface ContentSection {
   imageHeight?: number
 }
 
+export interface NavItem {
+  id: string // stable id, usually the page id
+  label: string
+  href: string // e.g. "/bemutatkozas"
+  visible: boolean
+  order: number
+}
+
 export interface SiteSettings {
   siteName: string
   siteDescription: string
   contactEmail: string
   footerText: string
+  navigation: NavItem[]
 }
 
 const DATA_DIR = path.join(process.cwd(), 'data')
@@ -221,7 +230,13 @@ const defaultSettings: SiteSettings = {
   siteName: 'FiloMento',
   siteDescription: 'Filozófiai Mentorprogram Tájékozatató oldal',
   contactEmail: 'filozofinformacio@gmail.com',
-  footerText: '2025 Filozófiai Mentorprogram'
+  footerText: '2025 Filozófiai Mentorprogram',
+  navigation: [
+    { id: 'bemutatkozas', label: 'Diákoknak', href: '/bemutatkozas', visible: true, order: 1 },
+    { id: 'tanaroknak', label: 'Tanároknak', href: '/tanaroknak', visible: true, order: 2 },
+    { id: 'jelentkezes', label: 'Jelentkezés', href: '/jelentkezes', visible: true, order: 3 },
+    { id: 'kapcsolat', label: 'Kapcsolat', href: '/kapcsolat', visible: true, order: 4 }
+  ]
 }
 
 // Load content from file

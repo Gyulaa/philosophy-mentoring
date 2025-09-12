@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { loadSettings } from "@/lib/cms";
 import { Geist, Geist_Mono, Inter, Lora } from "next/font/google";
 import "./globals.css";
 import { MobileDropdown } from "@/components/MobileMenu";
@@ -31,11 +32,15 @@ export const metadata: Metadata = {
   description: "Filozófiai Mentorprogram Tájékozatató oldal",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const settings = await loadSettings()
+  const nav = [...(settings.navigation || [])]
+    .filter(n => n.visible)
+    .sort((a, b) => a.order - b.order)
   return (
     <html lang="hu">
       <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${lora.variable} antialiased`}>
@@ -44,10 +49,9 @@ export default function RootLayout({
             <h1 className="text-xl font-semibold">FiloMento</h1>
 
             <nav className="hidden md:flex space-x-6">
-              <Link href="/bemutatkozas" className="hover:text-blue-300 font-medium">Diákoknak</Link>
-              <Link href="/tanaroknak" className="hover:text-blue-300 font-medium">Tanároknak</Link>
-              <Link href="/jelentkezes" className="hover:text-blue-300 font-medium">Jelentkezés</Link>
-              <Link href="/kapcsolat" className="hover:text-blue-300 font-medium">Kapcsolat</Link>
+              {nav.map(item => (
+                <Link key={item.id} href={item.href} className="hover:text-blue-300 font-medium">{item.label}</Link>
+              ))}
             </nav>
 
             <MobileDropdown />
