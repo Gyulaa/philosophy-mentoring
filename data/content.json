@@ -133,27 +133,6 @@
       }
     ]
   },
-  "test": {
-    "id": "test",
-    "title": "Teszt Oldal",
-    "sections": [
-      {
-        "id": "image-1757679129298",
-        "type": "image",
-        "title": "Kép",
-        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1757678699305__The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg",
-        "description": "test",
-        "imageWidth": 640,
-        "imageHeight": 360
-      },
-      {
-        "id": "hero",
-        "type": "hero",
-        "title": "Teszt Oldal",
-        "subtitle": "asd"
-      }
-    ]
-  },
   "test-site001": {
     "id": "test-site001",
     "title": "Teszt",
