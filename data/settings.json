@@ -26,18 +26,18 @@
       "order": 3
     },
     {
-      "id": "jelentkezes",
-      "label": "Jelentkezés",
-      "href": "/jelentkezes",
-      "visible": true,
-      "order": 5
-    },
-    {
       "id": "kapcsolat",
       "label": "Kapcsolat",
       "href": "/kapcsolat",
       "visible": true,
       "order": 4
+    },
+    {
+      "id": "jelentkezes",
+      "label": "Jelentkezés",
+      "href": "/jelentkezes",
+      "visible": true,
+      "order": 5
     },
     {
       "id": "Test001",
