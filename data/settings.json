@@ -38,6 +38,13 @@
       "href": "/test002",
       "visible": false,
       "order": 4
+    },
+    {
+      "id": "Test001",
+      "label": "Test001",
+      "href": "/test001",
+      "visible": true,
+      "order": 5
     }
   ]
 }
