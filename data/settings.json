@@ -23,6 +23,13 @@
       "label": "test002",
       "href": "/test002",
       "visible": false,
+      "order": 4
+    },
+    {
+      "id": "jelentkezes",
+      "label": "Jelentkezés",
+      "href": "/jelentkezes",
+      "visible": true,
       "order": 3
     },
     {
@@ -31,13 +38,6 @@
       "href": "/kapcsolat",
       "visible": true,
       "order": 5
-    },
-    {
-      "id": "jelentkezes",
-      "label": "Jelentkezés",
-      "href": "/jelentkezes",
-      "visible": true,
-      "order": 4
     },
     {
       "id": "Test001",
