@@ -19,6 +19,7 @@ export default function AdminContentEditor() {
   const [lastAddedId, setLastAddedId] = useState<string>('')
   const [newPageId, setNewPageId] = useState('')
   const [newPageTitle, setNewPageTitle] = useState('')
+  const [nav, setNav] = useState<Array<{ id: string; href: string }>>([])
 
   useEffect(() => {
     const fetchPages = async () => {
@@ -46,6 +47,15 @@ export default function AdminContentEditor() {
     }
 
     fetchPages()
+    ;(async () => {
+      try {
+        const settingsRes = await fetch('/api/admin/settings')
+        if (settingsRes.ok) {
+          const settings = await settingsRes.json() as { settings: { navigation?: Array<{ id: string; href: string }> } }
+          setNav(settings.settings.navigation || [])
+        }
+      } catch {}
+    })()
   }, [])
 
   useEffect(() => {
@@ -187,12 +197,32 @@ export default function AdminContentEditor() {
 
   const selectedPage = useMemo(() => draft, [draft])
 
+  const typeLabel: Record<ContentSection['type'], string> = {
+    hero: 'hero',
+    text: 'szöveg',
+    highlight: 'kiemelés',
+    'info-box': 'info-box',
+    button: 'gomb',
+    embed: 'űrlap beágyazás',
+    image: 'kép'
+  }
+
+  const previewHref = (() => {
+    if (!selectedId) return '/'
+    const item = nav.find(n => n.id === selectedId)
+    return item?.href || `/${selectedId}`
+  })()
+
   return (
     <AdminLayout>
       <div className="px-4 py-6 sm:px-0">
         <div className="border-4 border-dashed border-gray-200 rounded-lg p-6">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-2xl font-bold text-gray-900">Tartalom szerkesztése</h1>
+            <div className="flex items-center gap-2">
+              <Link href={previewHref} target="_blank" className="text-sm px-3 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700">Előnézet</Link>
+              <Link href="/admin/dashboard" className="text-sm px-3 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-gray-300">Vissza a Dashboardra</Link>
+            </div>
           </div>
 
           {loading && (
@@ -233,7 +263,6 @@ export default function AdminContentEditor() {
                 <div className="bg-white shadow rounded-lg p-5 space-y-6">
                   <div className="flex items-center justify-between">
                     <div className="text-sm text-gray-600">Aktuális oldal: <span className="font-medium">{selectedPage.id}</span></div>
-                    <button onClick={handleDeletePage} className="text-xs px-3 py-2 rounded bg-red-600 text-white hover:bg-red-700">Oldal törlése</button>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Oldal címe</label>
@@ -251,13 +280,13 @@ export default function AdminContentEditor() {
                       value={newType}
                       onChange={(e) => setNewType(e.target.value as ContentSection['type'])}
                     >
-                      <option value="hero">hero</option>
-                      <option value="text">text</option>
-                      <option value="highlight">highlight</option>
-                      <option value="info-box">info-box</option>
-                      <option value="button">button</option>
-                      <option value="embed">embed</option>
-                      <option value="image">image</option>
+                      <option value="hero">{typeLabel.hero}</option>
+                      <option value="text">{typeLabel.text}</option>
+                      <option value="highlight">{typeLabel.highlight}</option>
+                      <option value="info-box">{typeLabel['info-box']}</option>
+                      <option value="button">{typeLabel.button}</option>
+                      <option value="embed">{typeLabel.embed}</option>
+                      <option value="image">{typeLabel.image}</option>
                     </select>
                     <button
                       onClick={handleAddSection}
@@ -275,7 +304,7 @@ export default function AdminContentEditor() {
                           {isNew && <div className="border-t border-gray-200 mb-6"></div>}
                           <div className={`border rounded-md p-4 ${isNew ? 'mt-6' : ''}`}>
                             <div className="flex items-center justify-between mb-3">
-                              <div className="text-sm font-medium text-gray-900">Szekció: {section.type}</div>
+                              <div className="text-sm font-medium text-gray-900">Szekció: {typeLabel[section.type]}</div>
                               <div className="flex items-center gap-3">
                                 <div className="text-xs text-gray-500">ID: {section.id}</div>
                                 <div className="flex items-center gap-2">

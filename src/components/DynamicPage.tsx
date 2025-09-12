@@ -162,14 +162,12 @@ export default function DynamicPage({ pageContent }: DynamicPageProps) {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto content-card">
             {contentSections.map((section, index) => (
-              <div key={section.id}>
-                {index > 0 && section.type !== 'button' && section.type !== 'image' && (
+              <div key={section.id} className={index > 0 && section.type === 'info-box' ? 'mt-12 md:mt-12' : ''}>
+                {/* Only add a divider BEFORE sections except the first; never after */}
+                {index > 0 && section.type !== 'button' && section.type !== 'image' && section.type !== 'info-box' && (
                   <div className="border-t my-12"></div>
                 )}
                 <SectionRenderer section={section} />
-                {index < contentSections.length - 1 && section.type !== 'button' && section.type !== 'image' && (
-                  <div className="border-t my-12"></div>
-                )}
               </div>
             ))}
           </div>

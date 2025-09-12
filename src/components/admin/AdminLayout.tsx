@@ -58,19 +58,6 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <Link 
-                href="/" 
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-                target="_blank"
-              >
-                Előnézet
-              </Link>
-              <Link
-                href="/admin/dashboard"
-                className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Vissza a Dashboardra
-              </Link>
               <button
                 onClick={handleLogout}
                 className="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-md text-sm font-medium"
