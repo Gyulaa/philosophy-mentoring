@@ -29,7 +29,7 @@
       "id": "Test",
       "label": "Test",
       "href": "/test-oldal",
-      "visible": true,
+      "visible": false,
       "order": 4
     },
     {
