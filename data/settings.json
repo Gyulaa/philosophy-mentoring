@@ -36,7 +36,7 @@
       "id": "Test002",
       "label": "test002",
       "href": "/test002",
-      "visible": true,
+      "visible": false,
       "order": 4
     }
   ]
