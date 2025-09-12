@@ -132,29 +132,5 @@
         "isHighlighted": true
       }
     ]
-  },
-  "test001": {
-    "id": "test001",
-    "title": "Rólunk",
-    "sections": [
-      {
-        "id": "hero",
-        "type": "hero",
-        "title": "Rólunk",
-        "subtitle": "Teszt szöveg"
-      },
-      {
-        "id": "hero-1757682890746",
-        "type": "hero",
-        "title": "ez működik így?",
-        "subtitle": "?"
-      },
-      {
-        "id": "text-1757682905098",
-        "type": "text",
-        "title": "Új szekció",
-        "content": "Teszt"
-      }
-    ]
   }
 }
