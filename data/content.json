@@ -153,5 +153,17 @@
         "subtitle": "asd"
       }
     ]
+  },
+  "test-site001": {
+    "id": "test-site001",
+    "title": "Teszt",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Teszt",
+        "subtitle": ""
+      }
+    ]
   }
 }
