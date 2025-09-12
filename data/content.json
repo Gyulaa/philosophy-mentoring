@@ -161,6 +161,14 @@
         "type": "info-box",
         "content": "asdfsdaf",
         "title": "ez nem fog megjelenni"
+      },
+      {
+        "id": "image-1757685486746",
+        "type": "image",
+        "title": "Kép",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1757685497790__The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg",
+        "description": "Athéni Iskola",
+        "imageWidth": 640
       }
     ]
   }
