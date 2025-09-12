@@ -26,18 +26,11 @@
       "order": 3
     },
     {
-      "id": "Test",
-      "label": "Test",
-      "href": "/test-oldal",
-      "visible": false,
-      "order": 4
-    },
-    {
       "id": "kapcsolat",
       "label": "Kapcsolat",
       "href": "/kapcsolat",
       "visible": true,
-      "order": 5
+      "order": 4
     }
   ]
 }
