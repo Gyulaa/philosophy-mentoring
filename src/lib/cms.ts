@@ -10,13 +10,19 @@ export interface PageContent {
 
 export interface ContentSection {
   id: string
-  type: 'hero' | 'text' | 'highlight' | 'info-box' | 'button'
+  type: 'hero' | 'text' | 'highlight' | 'info-box' | 'button' | 'embed' | 'image'
   title?: string
   content?: string
   subtitle?: string
   buttonText?: string
   buttonLink?: string
   isHighlighted?: boolean
+  // Embed-specific
+  embedUrl?: string
+  height?: number
+  // Image-specific
+  imageUrl?: string
+  alt?: string
 }
 
 export interface SiteSettings {
@@ -29,6 +35,7 @@ export interface SiteSettings {
 const DATA_DIR = path.join(process.cwd(), 'data')
 const CONTENT_FILE = path.join(DATA_DIR, 'content.json')
 const SETTINGS_FILE = path.join(DATA_DIR, 'settings.json')
+const UPLOADS_DIR = path.join(process.cwd(), 'public', 'uploads')
 
 // GitHub persistence configuration (free via GitHub repo)
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
@@ -80,6 +87,43 @@ async function githubWriteJson(filePath: string, json: unknown): Promise<void> {
   }
   const putRes = await fetch(putUrl, { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) })
   if (!putRes.ok) throw new Error(`GitHub write failed: ${putRes.status}`)
+}
+
+async function ensureUploadsDir() {
+  try {
+    await fs.access(UPLOADS_DIR)
+  } catch {
+    await fs.mkdir(UPLOADS_DIR, { recursive: true })
+  }
+}
+
+export async function saveUploadFile(fileRelativePath: string, bytes: Buffer): Promise<{ url: string; path: string }> {
+  // fileRelativePath should be like "public/uploads/filename.ext" for GitHub writes
+  if (isGitHubCmsEnabled()) {
+    const putUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${fileRelativePath}`
+    const getUrl = getGithubContentUrl(fileRelativePath)
+    let sha: string | undefined
+    const getRes = await fetch(getUrl, { headers: githubHeaders(), cache: 'no-store' })
+    if (getRes.ok) {
+      const existing = await getRes.json() as { sha?: string }
+      sha = existing.sha
+    }
+    const body = {
+      message: `chore(upload): add ${fileRelativePath}`,
+      content: bytes.toString('base64'),
+      branch: GITHUB_BRANCH,
+      sha
+    }
+    const putRes = await fetch(putUrl, { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) })
+    if (!putRes.ok) throw new Error(`GitHub upload failed: ${putRes.status}`)
+    const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/${fileRelativePath}`
+    return { url: rawUrl, path: `/${fileRelativePath.replace(/^public\//, '')}` }
+  }
+
+  await ensureUploadsDir()
+  const absolute = path.join(process.cwd(), fileRelativePath)
+  await fs.writeFile(absolute, bytes)
+  return { url: `/${fileRelativePath.replace(/^public\//, '')}`, path: `/${fileRelativePath.replace(/^public\//, '')}` }
 }
 
 // Ensure data directory exists
@@ -140,6 +184,31 @@ const defaultContent: Record<string, PageContent> = {
       }
     ]
   }
+  ,
+  tanaroknak: {
+    id: 'tanaroknak',
+    title: 'Tanároknak',
+    sections: [
+      { id: 'hero', type: 'hero', title: 'Tanároknak', subtitle: 'Információk és együttműködési lehetőségek' },
+      { id: 'intro', type: 'text', title: 'Kapcsolódás', content: 'Tájékoztató a programról tanároknak.' }
+    ]
+  },
+  jelentkezes: {
+    id: 'jelentkezes',
+    title: 'Jelentkezés',
+    sections: [
+      { id: 'hero', type: 'hero', title: 'Jelentkezés', subtitle: 'Csatlakozz a programhoz' },
+      { id: 'how', type: 'text', title: 'Hogyan jelentkezz?', content: 'Itt találod a jelentkezés menetét.' }
+    ]
+  },
+  kapcsolat: {
+    id: 'kapcsolat',
+    title: 'Kapcsolat',
+    sections: [
+      { id: 'hero', type: 'hero', title: 'Kapcsolat', subtitle: 'Vedd fel velünk a kapcsolatot' },
+      { id: 'email', type: 'info-box', content: 'E-mail: filozofinformacio@gmail.com' }
+    ]
+  }
 }
 
 const defaultSettings: SiteSettings = {
@@ -150,12 +219,29 @@ const defaultSettings: SiteSettings = {
 }
 
 // Load content from file
+function mergeWithDefaults(existing: Record<string, PageContent> | null): Record<string, PageContent> {
+  const base: Record<string, PageContent> = existing ? { ...existing } : {}
+  let changed = false
+  for (const [key, value] of Object.entries(defaultContent)) {
+    if (!base[key]) {
+      base[key] = value
+      changed = true
+    }
+  }
+  // Persist merged defaults if running locally; for GitHub we will persist on next save
+  if (changed && !isGitHubCmsEnabled()) {
+    // fire-and-forget; callers of loadContent do not expect a write
+    saveContent(base).catch(() => {})
+  }
+  return base
+}
+
 export async function loadContent(): Promise<Record<string, PageContent>> {
   // GitHub-backed read if configured
   if (isGitHubCmsEnabled()) {
     try {
       const gh = await githubReadJson('data/content.json')
-      if (gh) return gh
+      if (gh) return mergeWithDefaults(gh)
     } catch {
       // fall back to defaults below
     }
@@ -164,7 +250,7 @@ export async function loadContent(): Promise<Record<string, PageContent>> {
   await ensureDataDir()
   try {
     const data = await fs.readFile(CONTENT_FILE, 'utf8')
-    return JSON.parse(data)
+    return mergeWithDefaults(JSON.parse(data))
   } catch {
     await saveContent(defaultContent)
     return defaultContent

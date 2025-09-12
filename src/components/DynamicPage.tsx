@@ -93,6 +93,47 @@ function SectionRenderer({ section }: { section: ContentSection }) {
         </div>
       )
 
+    case 'embed':
+      return (
+        <div className="flex justify-center">
+          {section.embedUrl && (
+            <iframe
+              src={section.embedUrl}
+              width="100%"
+              height={(section.height || 1880).toString()}
+              style={{ maxWidth: '640px', minHeight: `${section.height || 1880}px`, border: 'none' }}
+              title={section.title || 'Beágyazott űrlap'}
+              loading="lazy"
+              allowFullScreen
+            >
+              Betöltés…
+            </iframe>
+          )}
+        </div>
+      )
+
+    case 'image':
+      return (
+        <div className="flex justify-center">
+          {section.imageUrl && (() => {
+            let src = section.imageUrl as string
+            const match = src.match(/drive\.google\.com\/file\/d\/([^/]+)\//)
+            if (match && match[1]) {
+              src = `https://drive.google.com/uc?export=view&id=${match[1]}`
+            }
+            return (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={src}
+                alt={section.alt || section.title || ''}
+                className="max-w-full h-auto rounded"
+                referrerPolicy="no-referrer"
+              />
+            )
+          })()}
+        </div>
+      )
+
     default:
       return null
   }
