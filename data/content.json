@@ -153,7 +153,13 @@
         "id": "hero",
         "type": "hero",
         "title": "Test001",
-        "subtitle": ""
+        "subtitle": "asd"
+      },
+      {
+        "id": "text-1757681631794",
+        "type": "text",
+        "title": "Új szekció",
+        "content": "test"
       }
     ]
   }
