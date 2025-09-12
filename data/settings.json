@@ -30,14 +30,14 @@
       "label": "Kapcsolat",
       "href": "/kapcsolat",
       "visible": true,
-      "order": 4
+      "order": 5
     },
     {
       "id": "jelentkezes",
       "label": "Jelentkezés",
       "href": "/jelentkezes",
       "visible": true,
-      "order": 5
+      "order": 4
     },
     {
       "id": "Test001",
