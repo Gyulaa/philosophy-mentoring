@@ -3,9 +3,7 @@ import DynamicPage from '@/components/DynamicPage'
 
 export const dynamic = 'force-dynamic'
 
-interface Params { params: { slug: string } }
-
-export default async function GenericPage({ params }: Params) {
+export default async function Page({ params }: { params: { slug: string } }) {
   const slug = (params.slug || '').replace(/^\/+|\/+$/g, '')
   // Resolve slug via navigation mapping first (href -> id), then fallback to slug-as-id
   const settings = await loadSettings()

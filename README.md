@@ -131,7 +131,3 @@ Persistence modes
   "lint": "next lint"
 }
 ```
-
-## Admin guide
-
-For non-technical usage instructions (Hungarian), see `README_ADMIN.md`.
