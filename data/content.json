@@ -6,8 +6,8 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Gondolkodj velünk!",
-        "subtitle": "Fedezd fel a filozófia világát egy középiskolásoknak szóló, interaktív online mentorprogram keretében."
+        "title": "Merj gondolkodni!",
+        "subtitle": "\"Az embernek meg kell tanulnia felismerni és figyelni azt a fénylő csillogást, amely belülről villan át az elméjén, még inkább, mint a költők és bölcsek égboltjának ragyogását. Az ember mégis figyelmen kívül hagyja gondolatát, mert az övé. Minden zseniális műben felismerjük saját elutasított gondolatainkat: azok egyfajta idegenített fenséggel térnek vissza hozzánk.\"  —Ralph Waldo Emerson"
       },
       {
         "id": "intro",
