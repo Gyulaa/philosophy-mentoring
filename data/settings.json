@@ -31,6 +31,13 @@
       "href": "/kapcsolat",
       "visible": true,
       "order": 4
+    },
+    {
+      "id": "Rólunk",
+      "label": "Rólunk",
+      "href": "/szervezok",
+      "visible": true,
+      "order": 5
     }
   ]
 }
