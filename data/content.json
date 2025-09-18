@@ -140,5 +140,17 @@
         "isHighlighted": true
       }
     ]
+  },
+  "Rólunk": {
+    "id": "Rólunk",
+    "title": "Rólunk",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Rólunk",
+        "subtitle": ""
+      }
+    ]
   }
 }
