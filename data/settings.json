@@ -36,7 +36,7 @@
       "id": "Rólunk",
       "label": "Rólunk",
       "href": "/szervezok",
-      "visible": false,
+      "visible": true,
       "order": 5
     }
   ]
