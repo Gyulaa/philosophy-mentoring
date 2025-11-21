@@ -158,10 +158,16 @@
         "content": "A FiloMento mentorprogram néhány egyetemista kezdeményezése, akik hisznek abban, hogy a középiskolás évek alatt a legfontosabb tanulható képességek a gondolkodási, érvelési, analitikus valamint nyelvi-logikai készségek. Ezeket személyes mentoráláson, egy filozófiatörténeti áttekintésen és nívós tanulmányi versenyeken keresztül szeretnénk Neked átadni! Közös bennünk a bölcsesség iránti szeretet és az, hogy rengeteget fogalkoztunk e képességek fejlesztésével, valamint, hogy belülről is megtapasztaltuk azokat a versenyeket, melyekre akár Téged szívesen felkészítünk!"
       },
       {
+        "id": "hero-1763733361151",
+        "type": "hero",
+        "title": "Kovács Dániel",
+        "subtitle": ""
+      },
+      {
         "id": "info-box-1758199211259",
         "type": "info-box",
         "content": "A budaörsi Illyés Gyula Gimnáziumba jártam, ahol a fizika, a matematika és a történelem voltak a kedvenc tárgyaim és aktívan foglalkoztam diákérdekképviselettel. 11.-ben fakultáción ismerkedtem meg a filozófiával. Főként a tudomány- és politikafilozófiai kérdések foglalkoztattak, de hamar beleszerettem a metafizikába és az ismeretelméletbe is. Az élményem, hogy az órákon közösen együtt gondolkodtunk addig csak magamban dédelgetett ötletekről és kérdésekről,  valamint a filozófia versenyek hatása inspiráltak, hogy jelentkezzek az ELTE-re filozófiát tanulni. Most másodéves alapszakos hallgató vagyok itt, filozófia specializációval. Emellett rendszeresen látogatom a Logika Tanszék kurzusait, hallgatom az Eötvös Collegium filozófia műhelyének óráit, illetve az ELTE honorácior program keretei között járok a TáTK-ra és végzek saját kutatást is. Célom, hogy a programot minden jelentkező a szabad gondolkozás, kérdezés lehetőségének élje meg, és hogy a programunkból a kritikus gondolkodás és egyfajta reflexív tudatosság alapjait elsajátítva, majd saját ötletekkel, célokkal, véleményekkel távozhasson.",
-        "title": "Kovács Dániel"
+        "title": ""
       },
       {
         "id": "image-1763647785455",
@@ -188,10 +194,16 @@
         "imageHeight": 360
       },
       {
+        "id": "hero-1763733364532",
+        "type": "hero",
+        "title": "Pozsgai Csanád",
+        "subtitle": ""
+      },
+      {
         "id": "info-box-1763647877195",
         "type": "info-box",
         "content": "Valahol 10. osztály végén kezdtem el érdeklődni a filozófia iránt. Ezt a kezdeti lendületet számos meghatározó olvasmányélmény és filozófiai esszéverseny vitte tovább. Bár jelenleg joghallgató vagyok, a mai napig felvillanyoz amikor szabadidőmben a logikai pozitivizmussal, tudományfilozófiával, vagy etikával foglalkozhatok. Aktuális kedvenc gondolkodóim közé tartozik Aquinói Szent Tamás, Willard Van Orman Quine és Polányi Mihály. A FiloMento-ban a filozófiatörténeti betekintések mellett nagyon fontos számomra a mentorálás: filozófiából emelt érettségit tettem, több alkalommal voltam eredményes OKTV-n, esszé versenyeken — e tapsztalatokat szeretném átadni a magyar filozófusok következő középiskolás generációjának!",
-        "title": "Pozsgai Csanád"
+        "title": ""
       },
       {
         "id": "image-1763647880519",
