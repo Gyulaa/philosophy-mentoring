@@ -54,7 +54,7 @@ export default async function RootLayout({
               ))}
             </nav>
 
-            <MobileDropdown />
+            <MobileDropdown navItems={nav} />
           </div>
         </header>
 

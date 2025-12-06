@@ -10,8 +10,13 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import type { NavItem } from "@/lib/cms"
 
-export function MobileDropdown() {
+interface MobileDropdownProps {
+  navItems: NavItem[]
+}
+
+export function MobileDropdown({ navItems }: MobileDropdownProps) {
   const [open, setOpen] = React.useState(false)
 
   return (
@@ -27,26 +32,13 @@ export function MobileDropdown() {
           sideOffset={4}
           className="bg-[#0a2540] text-white w-48 rounded-md shadow-lg mt-2"
         >
-          <DropdownMenuItem asChild>
-            <Link href="/bemutatkozas" onClick={() => setOpen(false)}>
-              Diákoknak
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem asChild>
-            <Link href="/tanaroknak" onClick={() => setOpen(false)}>
-              Tanároknak
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem asChild>
-            <Link href="/jelentkezes" onClick={() => setOpen(false)}>
-              Jelentkezés
-            </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem asChild>
-            <Link href="/kapcsolat" onClick={() => setOpen(false)}>
-              Kapcsolat
-            </Link>
-          </DropdownMenuItem>
+          {navItems.map(item => (
+            <DropdownMenuItem key={item.id} asChild>
+              <Link href={item.href} onClick={() => setOpen(false)}>
+                {item.label}
+              </Link>
+            </DropdownMenuItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
