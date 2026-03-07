@@ -43,7 +43,7 @@
       "id": "konferencia",
       "label": "konferencia",
       "href": "/konferencia",
-      "visible": false,
+      "visible": true,
       "order": 6
     }
   ]
