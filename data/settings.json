@@ -38,13 +38,6 @@
       "href": "/szervezok",
       "visible": false,
       "order": 5
-    },
-    {
-      "id": "konferencia",
-      "label": "konferencia",
-      "href": "/konferencia",
-      "visible": false,
-      "order": 6
     }
   ]
 }
