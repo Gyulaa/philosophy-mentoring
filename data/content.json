@@ -203,32 +203,5 @@
         "imageHeight": 537
       }
     ]
-  },
-  "konferencia": {
-    "id": "konferencia",
-    "title": "FiloMento Konferencia",
-    "sections": [
-      {
-        "id": "hero",
-        "type": "hero",
-        "title": "Áprilisban érkezik az első FiloMento konferencia!",
-        "subtitle": "A legfontosabb tudnivalók:"
-      },
-      {
-        "id": "text-1772911001154",
-        "type": "text",
-        "title": "",
-        "content": "Időpont: Április 10.-11.\nHelyszín: ELTE BTK A épület 047-es terem.\n\nFigyelem! Várjuk BA, MA, MSc vagy PhD hallgatók jelentkezését előadóknak! Ha érdeklődsz a lehetőség iránt, küldj egy emailt a filozofinformacio@gmail.com címre!"
-      },
-      {
-        "id": "image-1772911205457",
-        "type": "image",
-        "title": "Kép",
-        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1772911347768_plak_t_konferencia_2026.png",
-        "description": "Kérjük terjessze a FiloMento konferencia hírét Ön is, filozófiai érdeklődésű kollégái, barátai körében!",
-        "imageWidth": 403,
-        "imageHeight": 735
-      }
-    ]
   }
 }
