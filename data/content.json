@@ -203,5 +203,17 @@
         "imageHeight": 537
       }
     ]
+  },
+  "konferencia": {
+    "id": "konferencia",
+    "title": "konferencia",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "konferencia",
+        "subtitle": ""
+      }
+    ]
   }
 }
