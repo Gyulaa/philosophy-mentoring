@@ -62,7 +62,7 @@ export default async function RootLayout({
 
         <footer className="bg-gray-900 text-gray-400 py-8 mt-16">
           <div className="container mx-auto px-6 text-center">
-            <p>2025 Filozófiai Mentorprogram</p>
+            <p>2026 Filozófiai Mentorprogram</p>
             <p className="mt-2">
               📩 Kapcsolat:{" "}
               <a
