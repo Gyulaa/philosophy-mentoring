@@ -36,8 +36,15 @@
       "id": "Rólunk",
       "label": "Rólunk",
       "href": "/szervezok",
-      "visible": false,
+      "visible": true,
       "order": 5
+    },
+    {
+      "id": "Konferencia",
+      "label": "Konferencia",
+      "href": "/konferencia",
+      "visible": true,
+      "order": 6
     }
   ]
 }
