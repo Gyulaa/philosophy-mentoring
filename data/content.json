@@ -228,6 +228,15 @@
         "description": "Kérjük terjessze a FiloMento konferencia hírét Ön is, filozófiai érdeklődésű kollégái, barátai körében!",
         "imageWidth": 403,
         "imageHeight": 735
+      },
+      {
+        "id": "image-1775224051521",
+        "type": "image",
+        "title": "Kép",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1775224079026_FiloMento_Konferencia_Program1_k_p.jpg",
+        "description": "A konferencia tervezett programja - a programváltozás jogát fenntartjuk.",
+        "imageWidth": 1242,
+        "imageHeight": 1756
       }
     ]
   }
