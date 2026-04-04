@@ -215,6 +215,13 @@
         "subtitle": "A legfontosabb tudnivalók:"
       },
       {
+        "id": "embed-1775318866305",
+        "type": "embed",
+        "title": "Regisztráció:",
+        "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdx7hcLs_xPK5RnzZ48FEvOLGwn7j-CVPDGLTEPLB0U1Dza9A/viewform?usp=dialog",
+        "height": 1880
+      },
+      {
         "id": "text-1772911918799",
         "type": "text",
         "title": "",
@@ -237,13 +244,6 @@
         "description": "A konferencia tervezett programja. A programváltozás jogát fenntartjuk. - A Szervezők",
         "imageWidth": 1756,
         "imageHeight": 1242
-      },
-      {
-        "id": "embed-1775318866305",
-        "type": "embed",
-        "title": "Regisztráció:",
-        "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdx7hcLs_xPK5RnzZ48FEvOLGwn7j-CVPDGLTEPLB0U1Dza9A/viewform?usp=dialog",
-        "height": 1880
       }
     ]
   }
