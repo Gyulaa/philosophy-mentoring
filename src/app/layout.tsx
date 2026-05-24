@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { loadSettings } from "@/lib/cms";
 import { Geist, Geist_Mono, Inter, Lora } from "next/font/google";
 import "./globals.css";
@@ -46,7 +47,10 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${lora.variable} antialiased`}>
         <header className="bg-[#0a2540] text-white shadow-md sticky top-0 z-50">
           <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 className="text-xl font-semibold">FiloMento</h1>
+            <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <Image src="/favicon.ico" alt="FiloMento logo" width={28} height={28} className="rounded-sm" />
+              <span className="text-xl font-semibold">FiloMento</span>
+            </Link>
 
             <nav className="hidden md:flex space-x-6">
               {nav.map(item => (
