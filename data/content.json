@@ -114,6 +114,12 @@
         "content": "A jelentkezés során a diákoknak először egy adatlapot kell kitölteni. Ebben nevükön, elérhetőségükön és oktatási intézményükön kívül nem kérünk el tőlük személyes adatokat. Itt leginkább számunkra fontos visszajelzésre lesz lehetőség, honnan hallottak a programról, miért javasolták nekik etc.\n\nA második részben viszont egy maximum 2000 karakteres rövid írást fogunk tőlük kérni motivációjukról, a programmal kapcsolatos elvárásaikról, jövőbeli terveikről és eddigi munkáikról. Ennek fő célja, hogy megismerjük érdeklődési körüket, azonban ezzel egyben szándékunk is mérni, a diák mennyire tudja felmérni, hogy mennyire való számára a program. Az írásművek a Personal Statment műfaját hivatottak imitálni, amely egy előzetes képet ad nekünk arról, hogy a jelentkezőt hogyan kell továbbfejlesztenünk ebben a műfajban, mivel a filozófiai írásművek mellett fontos képességnek tartjuk, hogy későbbi ösztöndíj jelentkezésekhez vagy kutatási tervezetek megíráshoz megfelelő tudással lássuk el őket a személyes mentorálás során."
       },
       {
+        "id": "adatkezeles-notice",
+        "type": "info-box",
+        "title": "",
+        "content": "A jelentkezési lap kitöltésével személyes adatokat adsz meg (név, e-mail cím, iskola, életkor stb.). Ezeket kizárólag a programra való felvétel elbírálásához és a résztvevőkkel való kapcsolattartáshoz használjuk fel. Részletes tájékoztatót — jogaidról, adatmegőrzési időről és az adatfeldolgozókról — az oldal alján, az Adatkezelési tájékoztatóban találsz."
+      },
+      {
         "id": "embed-1757593067764",
         "type": "embed",
         "title": "",
@@ -201,6 +207,60 @@
         "description": "Csanád a XXXIII. IPO díjátadóján",
         "imageWidth": 805,
         "imageHeight": 537
+      }
+    ]
+  },
+  "adatkezeles": {
+    "id": "adatkezeles",
+    "title": "Adatkezelési tájékoztató",
+    "sections": [
+      {
+        "id": "hero-adatkezeles",
+        "type": "hero",
+        "title": "Adatkezelési tájékoztató",
+        "subtitle": "Tájékoztató a FiloMento mentorprogram adatkezelési gyakorlatáról"
+      },
+      {
+        "id": "text-adatkezelo",
+        "type": "text",
+        "title": "1. Az adatkezelő",
+        "content": "A FiloMento mentorprogram (a továbbiakban: „a program", „mi") önkéntes alapon működő, nem bejegyzett kezdeményezés, melynek szervezői magyar felsőoktatási intézmények hallgatói. Adatkezeléssel kapcsolatos megkereséseidet az alábbi elérhetőségre küldheted:\n\nE-mail: filozofinformacio@gmail.com"
+      },
+      {
+        "id": "text-kezelt-adatok",
+        "type": "text",
+        "title": "2. Kezelt adatok, célok és jogalapok",
+        "content": "Jelentkezési adatok (Google Forms)\nA programra való jelentkezés során az alábbi személyes adatokat kérjük el: név, e-mail cím, egyéb elérhetőség, iskola neve, évfolyam, életkor, érdeklődési területek, a programról való értesülés forrása, rendelkezésre állás és jövőbeli tervek.\n\nAz adatkezelés célja: a jelentkezők értékelése és kiválasztása, a felvételi döntés közlése, a felvett résztvevőkkel való kapcsolattartás és a program megszervezése.\n\nJogalap: a Google Forms kitöltésekor a jelölőnégyzetek bejelölésével adott önkéntes hozzájárulásod [GDPR 6. cikk (1) bekezdés a) pont].\n\nKapcsolatfelvétel (e-mail)\nHa e-mailben keresed meg szervezőinket, az üzenetedben szereplő személyes adatokat kizárólag a kapcsolattartás céljából kezeljük.\n\nJogalap: önkéntes hozzájárulás [GDPR 6. cikk (1) bekezdés a) pont]."
+      },
+      {
+        "id": "text-megorzesi-ido",
+        "type": "text",
+        "title": "3. Adatmegőrzési idő",
+        "content": "A be nem vett jelentkezők adatait a döntés meghozatalát követő 30 napon belül töröljük.\n\nA felvett résztvevők adatait a program lezárultát követő legfeljebb 1 évig kezeljük.\n\nAz e-mail levelezést a kapcsolatfelvételtől számított 1 évig őrizzük.\n\nAz adatok azonnali törlését bármikor kérheted a filozofinformacio@gmail.com e-mail-címen."
+      },
+      {
+        "id": "text-adatfeldolgozok",
+        "type": "text",
+        "title": "4. Adatfeldolgozók",
+        "content": "Az adatok kezeléséhez az alábbi külső szolgáltatókat vesszük igénybe:\n\nGoogle LLC – a jelentkezési adatok fogadása és tárolása Google Forms-on keresztül, valamint a szervezők belső e-mail kommunikációja. Google adatvédelmi irányelvek: policies.google.com/privacy\n\nGitHub Inc. – a weboldal képeinek és statikus fájljainak tárolása. GitHub adatvédelmi tájékoztató: docs.github.com/en/site-policy/privacy-policies"
+      },
+      {
+        "id": "text-jogok",
+        "type": "text",
+        "title": "5. Az érintett jogai",
+        "content": "Az Európai Unió általános adatvédelmi rendelete (GDPR) alapján az alábbi jogok illetnek meg:\n\nHozzáférési jog – tájékoztatást kérhetsz az általunk kezelt adataidról.\n\nHelyesbítési jog – kérheted a pontatlan vagy hiányos adataid javítását.\n\nTörlési jog – kérheted adataid törlését, ha az adatkezelés célja megszűnt, vagy hozzájárulásodat visszavonod.\n\nAz adatkezelés korlátozásához való jog – kérheted, hogy az adataid kezelését korlátozzuk.\n\nAdathordozhatósághoz való jog – kérheted az adataid géppel olvasható formátumban való kiadását.\n\nTiltakozási jog – tiltakozhatsz az adatkezelés ellen.\n\nJogaid gyakorlásához küldj e-mailt a filozofinformacio@gmail.com-ra. Megkeresésedre 30 napon belül válaszolunk."
+      },
+      {
+        "id": "text-panasz",
+        "type": "text",
+        "title": "6. Panasztétel",
+        "content": "Ha úgy érzed, hogy adatkezelésünk nem felel meg a hatályos jogszabályoknak, panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH):\n\nCím: 1055 Budapest, Falk Miksa utca 9-11.\nE-mail: ugyfelszolgalat@naih.hu\nWeboldal: naih.hu"
+      },
+      {
+        "id": "text-hatalyba-lepes",
+        "type": "text",
+        "title": "7. Hatályba lépés és módosítás",
+        "content": "Jelen adatkezelési tájékoztató 2026. május 1-jén lép hatályba. A FiloMento mentorprogram fenntartja a jogot a tájékoztató módosítására; lényeges változás esetén az oldalon tájékoztatjuk az érintetteket."
       }
     ]
   },

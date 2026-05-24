@@ -76,6 +76,11 @@ export default async function RootLayout({
                 filozofinformacio@gmail.com
               </a>
             </p>
+            <p className="mt-3 text-sm">
+              <Link href="/adatkezeles" className="hover:text-white transition-colors">
+                Adatkezelési tájékoztató
+              </Link>
+            </p>
           </div>
         </footer>
       </body>
