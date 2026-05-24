@@ -29,6 +29,9 @@ export interface ContentSection {
   // Preferred pixel sizing
   imageWidth?: number
   imageHeight?: number
+  // Info-box optional inline link
+  linkHref?: string
+  linkText?: string
 }
 
 export interface NavItem {

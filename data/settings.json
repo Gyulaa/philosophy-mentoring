@@ -45,6 +45,13 @@
       "href": "/konferencia",
       "visible": true,
       "order": 6
+    },
+    {
+      "id": "adatkezeles",
+      "label": "Adatkezelési tájékoztató",
+      "href": "/adatkezeles",
+      "visible": false,
+      "order": 7
     }
   ]
 }

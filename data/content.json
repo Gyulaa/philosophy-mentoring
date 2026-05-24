@@ -117,7 +117,9 @@
         "id": "adatkezeles-notice",
         "type": "info-box",
         "title": "",
-        "content": "A jelentkezési lap kitöltésével személyes adatokat adsz meg (név, e-mail cím, iskola, életkor stb.). Ezeket kizárólag a programra való felvétel elbírálásához és a résztvevőkkel való kapcsolattartáshoz használjuk fel. Részletes tájékoztatót jogaidról, adatmegőrzési időről és az adatfeldolgozókról az oldal alján, az Adatkezelési tájékoztatóban találsz."
+        "content": "A jelentkezési lap kitöltésével személyes adatokat adsz meg (név, e-mail cím, iskola, életkor stb.). Ezeket kizárólag a programra való felvétel elbírálásához és a résztvevőkkel való kapcsolattartáshoz használjuk fel. Részletes tájékoztatót jogaidról, adatmegőrzési időről és az adatfeldolgozókról az oldal alján, az Adatkezelési tájékoztatóban találsz.",
+        "linkText": "Adatkezelési tájékoztató",
+        "linkHref": "/adatkezeles"
       },
       {
         "id": "embed-1757593067764",

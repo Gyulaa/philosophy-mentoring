@@ -74,6 +74,14 @@ function SectionRenderer({ section }: { section: ContentSection }) {
               ))}
             </div>
           )}
+          {section.linkHref && (
+            <a
+              href={section.linkHref}
+              className="mt-3 inline-block font-medium underline hover:text-blue-900 transition-colors"
+            >
+              {section.linkText || section.linkHref}
+            </a>
+          )}
         </div>
       )
 
