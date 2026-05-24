@@ -6,8 +6,15 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Gondolkodj velünk!",
-        "subtitle": "Fedezd fel a filozófia világát egy középiskolásoknak szóló, interaktív online mentorprogram keretében."
+        "title": "Merj gondolkodni!",
+        "subtitle": "Ugorj fejest abba a ma is zúgó folyamba, amit filozófiának hívunk! Interaktív mentorprogramunk keretében nemcsak a filozófiatörténettel ismerkedhetsz meg, hanem azt is megtanulhatod, hogyan fejezd ki saját gondolataid meggyőzően, filozófiai igényességgel!"
+      },
+      {
+        "id": "highlight-1758191919918",
+        "type": "highlight",
+        "title": " ",
+        "content": "\"Az embernek meg kell tanulnia felismerni és figyelni azt a fénylő csillogást, amely belülről villan át az elméjén, még inkább, mint a költők és bölcsek égboltjának ragyogását. Az ember mégis figyelmen kívül hagyja gondolatát, mert az övé. Minden zseniális műben felismerjük saját elutasított gondolatainkat: azok egyfajta idegenített fenséggel térnek vissza hozzánk.\"\n\n—Ralph Waldo Emerson",
+        "isHighlighted": true
       },
       {
         "id": "intro",
@@ -18,19 +25,21 @@
       {
         "id": "schedule-note",
         "type": "info-box",
-        "content": "Az év tervezetét hamarosan itt tekintheted meg. Fontos, hogy a jelentkezők érdeklődése és a program lefolyása tükrében fenntartjuk magunknak a lehetőséget az év során kisebb változtatások eszközlésére."
+        "content": "Itt olvashatod tervezett tanmenetünket:\n\n1. Bevezetés — Mi a filozófia?\n2.  Preszókratikus filozófiák — Hogyan lett Thalész milliomos?\n3.  Szókratész és Platón: metafizika és ismeretelmélet — A tudás miért nem bizonyosság?\n4.  Szókratész és Platón: politikai filozófiai és etika — Miért legyenek filozófusok a királyok?\n5.  Arisztotelész: metafizika és ismeretelmélet — Szubsztanciák…? Ontológia…? Mi van?!\n6.  Arisztotelész: politikai filozófia és etika — Miért jobb a politeia, mint a demokrácia?\n7.  Szent Ágoston és Szent Tamás — Vedd és olvasd!\n8.  Descartes és Bacon (felvilágosodás) — Van bizonyosság?\n9.  Locke, Hume, Hobbes, Rousseau, Montesquieu – Valóban létezik a társadalmi szerződés?\n10.   Spinoza és Leibnitz — Tényleg csak egy létező van?\n11.   Kant — Mit is jelent a kopernikuszi fordulat?\n12.   Hegel, Fichte, Schelling — A Világszellem önmegismerési folyamatának mellékterméke lennék?\n13.   Kierkegaard — Ki volt a hit lovagja? Miért kell hit az élethez?\n14.   Nietzsche — Mi az eredeti filozófia az  „Übermensch” mögött?\n15.   Marx — Mi volt az eredeti filozófia a kommunizmus mögött?\n16.   Heidegger — Mi a lét? Hogyan éljek autentikusan?\n17.   Hermeneutika — Hogyan értelmezzünk szövegeket?\n18.   Pszichoanalízis és a filozófia — Mi a pszichológia hatása a gondolkodásra?\n19.   Pozitivizmus és logikai filozófia, bécsi kör —Julius Caesar egy prím szám?\n20.   Wittgenstein, Russell, Moore és a nyelvfilozófia — Nyelvem határa valóban a világom határa?\n21.   Neurath, Reichenbach, Quine, Davidson és Kuhn — Hol tart a modern tudományfilozófia?\n22.   Simone Weil, Sartre, Camus és Levinas — Hogyan kezeljük az élet abszurditását?\n23.   20. századi politikai filozófiák — Michel Foucault, Hannah Arendt, Robert Nozick és mások\n24.   Modern etika — Mit jelent a narratív identitás és a morális szerencse?\n\n(A tanmenet- és programváltozás jogát fenntartjuk.)",
+        "title": ""
       },
       {
         "id": "about-us",
         "type": "highlight",
         "title": "Kik vagyunk mi?",
-        "content": "A programszervezői és lebonyolítói NEM tanárok vagy egyetemi professzorok, hanem motivált egyetemisták, akiknek gimis korukban sokat jelentett a filozófia oktatás és most ezt szeretnék továbbadni Neked is. De ne ijedj meg, sokan közülünk filozófiát hallgatnak, vesznek rész egyetemi kutatásokban vagy járnak szakkollégiumba. Mind érettségiztünk emelt szinten filozófiából, OKTV-ztünk és páran még a Nemzetközi Filozófia Olimpián is voltak."
+        "content": "A programszervezői és lebonyolítói NEM tanárok vagy egyetemi oktatók, hanem motivált egyetemisták, akiknek gimnazista korukban sokat jelentett a filozófia oktatás és most ezt szeretnék továbbadni Neked is. De ne ijedj meg, sokan közülünk filozófiát hallgatnak, vesznek rész egyetemi kutatásokban vagy járnak szakkollégiumba. Mind érettségiztünk emelt szinten filozófiából, OKTV-ztünk és páran még a Nemzetközi Filozófiai Diákolimpián is voltunk.",
+        "isHighlighted": true
       },
       {
         "id": "target-audience",
         "type": "text",
         "title": "Kiknek a jelentkezését várjuk?",
-        "content": "Olyan középiskolás diákokét (9.-12. évfolyamig), akik úgy érzik, hogy szeretnek néha túlkérdezni azon, amit az iskolai anyag le tud fedni például magyarból, matekból, fizikából, töriből vagy etikából. Ha esetleg már vannak konkrét filozófiai kérdések vagy gondolkodók, amik felkeltették az érdeklődésedet, akkor pedig biztosan velünk a helyed, de ez nem elvárás.\n\nFontos továbbá, hogy merj saját ötletekkel előrukkolni, hiszen a program zárókonferenciájára a kijelölt mentorod segítségével el kell készítened egy saját filozófiai cikket, amit majd előadhatsz. Ha úgy érzed, hogy híján vagy még íráskészségnek vagy a gondolatok megragadásának ehhez a feladathoz, semmi gond, részben az önálló kritikai gondolkodás és a folyamatos reflexióra való képesség elsajátítása is a célunk a mentorálásoddal."
+        "content": "Olyan középiskolás diákokét (9.-12. évfolyamig), akik úgy érzik, hogy szeretnek néha túlkérdezni azon, amit az iskolai anyag le tud fedni például magyarból, matekból, fizikából, töriből vagy etikából. Ha esetleg már vannak konkrét filozófiai kérdések vagy gondolkodók, amik felkeltették az érdeklődésedet, akkor pedig biztosan velünk a helyed, de ez nem elvárás."
       },
       {
         "id": "application",
@@ -53,14 +62,38 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Tanároknak",
-        "subtitle": "Információk és együttműködési lehetőségek"
+        "title": "Segítsen a jövő gondolkodóinak kibontakozni!",
+        "subtitle": "Ismerje meg programunkat, és ajánlja tehetséges diákjainak a filozófia világának felfedezését!"
       },
       {
         "id": "intro",
         "type": "text",
-        "title": "Kapcsolódás",
-        "content": "Tájékoztató a programról tanároknak."
+        "title": "A programról tanároknak",
+        "content": "A programot olyan egyetemisták hozták létre, akiknek meghatározó élmény volt az a gimnáziumi filozófia oktatás, melyre az ország legtöbb intézménye ma már sajnos nem tud lehetőséget biztosítani a diákoknak. Célunk azokhoz a tehetséges és érdeklődő fiatalokhoz eljuttatni a „bölcsesség szeretetét\", akik sosem találkoznának a filozófiával, vagy csak nem elég korán. Bár nem vagyunk tanárok, mégis úgy gondoljuk, hogy értékes segítséget biztosíthatunk a jelentkezőinknek tudásuk elmélyítésében a filozófia terén és egy tudatos, kritikus és reflexív magatartás megerősítésében; mindezt online formában, hogy az ország minden pontjáról be lehessen kapcsolódni bárkinek és ezzel egyben valamilyen szinten támogathassuk a tehetséggondozásban dolgozó pedagógusok munkáját."
+      },
+      {
+        "id": "info-box-1757593236924",
+        "type": "info-box",
+        "content": "Fontos itt megjegyezni, hogy a jelentkezőktől a programszervező és lebonyolítói semmilyen anyagi honoráriumot nem kérnek vagy fogadnak el! Valljuk, hogy a szabad gondolkodás és a tudás mindenkié!"
+      },
+      {
+        "id": "text-1757593251924",
+        "type": "text",
+        "title": "",
+        "content": "Az Ön segítségét abban kérjük, hogy amennyiben van olyan tehetséges tanuló az Ön intézményében, aki a tanulmányi versenyeken vagy az órákon különös érzékenységet mutatott a filozófiai jellegű problémák irányába, annak kérjük ajánlja figyelemébe ezt a lehetőséget. Engedje meg, hogy meggyőzzük ezzel kapcsolatban!\n\nA program gerincét azok a szeminárium típusú alkalmak fogják alkotni, amiket hétről hétre egymás között felosztva fogunk tartani. A filozófiának kronologikus és tematikus megközelítését fogjuk keverni, ezáltal igyekszünk a diákokhoz egyszerre közelebb hozni a filozófia klasszikusait és próbáljuk közben interdiszciplináris kérdésekbe ágyazva trenírozni a kritikai gondolkodás, érveléstechnikát, esszéírást és a matematikai logikát. Fontos, hogy kis csapatunkban azon a véleményen vagyunk, hogy az analitikus és kontinentális filozófiai ugyanolyan jelentőséggel bír, tehát velünk a reál és humán beállítottságú jelentkezők is megtalálják számításukat, akár mintegy kiegészítéseként kedvenc tárgyuknak. Az órák alapvetően viedóhívásban zajlanak, általában szombatonként, így kérjük Önöket, amennyiben szükséges segítsék lehetőségükhöz mérten a tanulót, hogy rendelkezésére álljon a megfelelő technológiai háttér. Ezentúl van egy közös Google Classroom csoportunk is, ahova azokat az anyagokat töltjük fel a diákoknak, amiket további olvasásra ajánlunk, de esetleg már nem fértek bele az órába.\n\nA filozófia órák mellett a másik lehetőség, amit a programunk kínál a tanulóknak az a személyes mentorálás.\nA programban mentorálást vállaló hallgatókban közös egy alapvető filozófiai háttérismeret, ám személyes érdeklődési köreink nagyon szerte ágazóak. Így tényleg a humán és reál érdeklődésű diákok számára is tudunk alkalmas mentort biztosítani, legyen szó metafizikáról, ismeretelméletről, tudományfilozófiáról, matematikai logikáról, nyelvfilozófiáról, etikáról, politikai filozófiáról, társadalomfilozófiáról, jogfilozófiáról, esztétikáról, művészetfilozófiáról.\n\nDiákjainkat külön csoportos alkalmakon segítjük az OKTV-re és a filozófia érettségire való felkészülésben."
+      },
+      {
+        "id": "highlight-1757593285380",
+        "type": "highlight",
+        "title": "",
+        "content": "Mindemellett megköszönjük, amennyiben tetszik Önnek a kezdeményezésünk, ha megosztja ezt az oldalt olyan ismerősökkel, pedagógusokkal, versenyszervezőkkel, táborszervezőkkel vagy tehetséggondozásban dolgozókkal, akik még több fiatalhoz el tudják juttatni ezt a teljesen nyílt, pro bono lehetőséget.",
+        "isHighlighted": true
+      },
+      {
+        "id": "text-1757593310396",
+        "type": "text",
+        "title": "Kiknek a jelentkezését várjuk?",
+        "content": "Mivel a filozófia oktatás ma már igen ritkán valósul csak meg, a diákoktól semmilyen előképzettséget nem várunk el, ám nagyon örülünk olyan jelentkezőknek is, akiknek már kifejezett érdeklődésük van a filozófia iránt. Főleg olyan diákokat várunk, akik motiváltak erre az extra tanulásra, jó absztrakciós képességgel rendelkeznek és az órákon gyakran adnak hangot saját véleményüknek, esetleg egyedi ötletekkel, bizonyításokkal vagy megközelítésekkel tud előállni. Ezeket a képességeket mind fontosabbnak véljük a tanulmányi átlagnál.\n\nAmennyiben Ön pedagógus vagy olyan személy, akire tanulmányi értelemben a jelentkező mentoraként tekinthet, annyiban egy, a diáknak a programhoz írt ajánlólevéllel megkönnyítheti a mi munkánkat és egy értékes visszajelzéssel is szolgálhat magának a jelentkezőnek is."
       }
     ]
   },
@@ -71,14 +104,27 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Jelentkezés",
-        "subtitle": "Csatlakozz a programhoz"
+        "title": "Jelentkezz a programra!",
+        "subtitle": "Fedezd fel a filozófia világát egy középiskolásoknak szóló, interaktív online mentorprogram keretében!"
       },
       {
         "id": "how",
         "type": "text",
-        "title": "Hogyan jelentkezz?",
-        "content": "Itt találod a jelentkezés menetét."
+        "title": "A jelentkezés menete",
+        "content": "A jelentkezés során a diákoknak először egy adatlapot kell kitölteni. Ebben nevükön, elérhetőségükön és oktatási intézményükön kívül nem kérünk el tőlük személyes adatokat. Itt leginkább számunkra fontos visszajelzésre lesz lehetőség, honnan hallottak a programról, miért javasolták nekik etc.\n\nA második részben viszont egy maximum 2000 karakteres rövid írást fogunk tőlük kérni motivációjukról, a programmal kapcsolatos elvárásaikról, jövőbeli terveikről és eddigi munkáikról. Ennek fő célja, hogy megismerjük érdeklődési körüket, azonban ezzel egyben szándékunk is mérni, a diák mennyire tudja felmérni, hogy mennyire való számára a program. Az írásművek a Personal Statment műfaját hivatottak imitálni, amely egy előzetes képet ad nekünk arról, hogy a jelentkezőt hogyan kell továbbfejlesztenünk ebben a műfajban, mivel a filozófiai írásművek mellett fontos képességnek tartjuk, hogy későbbi ösztöndíj jelentkezésekhez vagy kutatási tervezetek megíráshoz megfelelő tudással lássuk el őket a személyes mentorálás során."
+      },
+      {
+        "id": "adatkezeles-notice",
+        "type": "info-box",
+        "title": "",
+        "content": "A jelentkezési lap kitöltésével személyes adatokat adsz meg (név, e-mail cím, iskola, életkor stb.). Ezeket kizárólag a programra való felvétel elbírálásához és a résztvevőkkel való kapcsolattartáshoz használjuk fel. Részletes tájékoztatót jogaidról, adatmegőrzési időről és az adatfeldolgozókról az oldal alján, az Adatkezelési tájékoztatóban találsz."
+      },
+      {
+        "id": "embed-1757593067764",
+        "type": "embed",
+        "title": "",
+        "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeHOEqXxPdNiMsVBasgq3wg2pCnZ_dr6t6e-_xCLYHtjOT6rg/viewform?embedded=true",
+        "height": 1880
       }
     ]
   },
@@ -89,13 +135,175 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Kapcsolat",
-        "subtitle": "Vedd fel velünk a kapcsolatot"
+        "title": "Lépj velünk kapcsolatba!",
+        "subtitle": "Kérdésed van a programmal, a jelentkezéssel vagy bármi mással kapcsolatban? Lépj velünk kapcsolatba!"
       },
       {
-        "id": "email",
-        "type": "info-box",
-        "content": "E-mail: filozofinformacio@gmail.com"
+        "id": "highlight-1757593478836",
+        "type": "highlight",
+        "title": "Elérhetőségeink",
+        "content": "📩 E-mail: filozofinformacio@gmail.com",
+        "isHighlighted": true
+      }
+    ]
+  },
+  "Rólunk": {
+    "id": "Rólunk",
+    "title": "Rólunk",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "A szervezőkről",
+        "subtitle": "Kik is vagyunk mi, a FiloMento szervezői?"
+      },
+      {
+        "id": "text-1758199249719",
+        "type": "text",
+        "title": " ",
+        "content": "A FiloMento mentorprogram néhány egyetemista kezdeményezése, akik hisznek abban, hogy a középiskolás évek alatt a legfontosabb tanulható képességek a gondolkodási, érvelési, analitikus valamint nyelvi-logikai készségek. Ezeket személyes mentoráláson, egy filozófiatörténeti áttekintésen és nívós tanulmányi versenyeken keresztül szeretnénk Neked átadni! Közös bennünk a bölcsesség iránti szeretet és az, hogy rengeteget fogalkoztunk e képességek fejlesztésével, valamint, hogy belülről is megtapasztaltuk azokat a versenyeket, melyekre akár Téged szívesen felkészítünk!"
+      },
+      {
+        "id": "text-1763733755725",
+        "type": "text",
+        "title": "Bencze Sarolta",
+        "content": "\"Saci vagyok, jelenleg filozófiát és neveléstudományt tanulok Belgiumban, a KU Leuvenen. Mióta az eszemet tudom foglalkoztattak a fogósabb és nehezebb témák, kérdések, és a róluk való gondolkodáshoz nekem először az irodalmon és a vallásokon keresztül vezetett az út. Középsuliban ezért aztán el is kezdtem filozófia faktra járni, illetve kerestem a lehetőségeket, hogy innen-onnan tanuljak róla különféle programokon keresztül. Többször vettem részt országos és nemzetközi versenyeken, es végül filozófiából csináltam az egyik emelt szintű érettségim is. A területen belül engem kifejezetten az oktatásfilozófia, a politikafilozófia és az episztemológia foglalkoztat. Ezekről bármikor elcsivitelek órákon át. Fontosnak tartom, hogy a filozófiaoktatás minél széleskörűbb és szabadabb legyen a kis országunkban, ezért is csatlakoztam a kezdeményezéshez.\""
+      },
+      {
+        "id": "image-1763647871980",
+        "type": "image",
+        "title": "",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1763742048628_FiloMento_BenczeSarolta.jpg",
+        "description": "Saci a Museum De Pont-ban",
+        "imageWidth": 507,
+        "imageHeight": 607
+      },
+      {
+        "id": "text-1763733937260",
+        "type": "text",
+        "title": "Kovács Dániel",
+        "content": "\"A budaörsi Illyés Gyula Gimnáziumba jártam, ahol a fizika, a matematika és a történelem voltak a kedvenc tárgyaim és aktívan foglalkoztam diákérdekképviselettel. 11.-ben fakultáción ismerkedtem meg a filozófiával. Főként a tudomány- és politikafilozófiai kérdések foglalkoztattak, de hamar beleszerettem a metafizikába és az ismeretelméletbe is. Az élményem, hogy az órákon közösen együtt gondolkodtunk addig csak magamban dédelgetett ötletekről és kérdésekről,  valamint a filozófia versenyek hatása inspiráltak, hogy jelentkezzek az ELTE-re filozófiát tanulni. Most másodéves alapszakos hallgató vagyok itt, filozófia specializációval. Emellett rendszeresen látogatom a Logika Tanszék kurzusait, hallgatom az Eötvös Collegium filozófia műhelyének óráit, illetve az ELTE honorácior program keretei között járok a TáTK-ra és végzek saját kutatást is. Célom, hogy a programot minden jelentkező a szabad gondolkozás, kérdezés lehetőségének élje meg, és hogy a programunkból a kritikus gondolkodás és egyfajta reflexív tudatosság alapjait elsajátítva, majd saját ötletekkel, célokkal, véleményekkel távozhasson.\""
+      },
+      {
+        "id": "image-1763647785455",
+        "type": "image",
+        "title": "",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1763732547466_FiloMento_Kov_csD_niel.jpeg",
+        "description": "Dani egy szónokversenyen",
+        "imageWidth": 507,
+        "imageHeight": 637
+      },
+      {
+        "id": "text-1763733988428",
+        "type": "text",
+        "title": "Pozsgai Csanád",
+        "content": "\"Valahol 10. osztály végén kezdtem el érdeklődni a filozófia iránt. Ezt a kezdeti lendületet számos meghatározó olvasmányélmény és filozófiai esszéverseny vitte tovább. Bár jelenleg joghallgató vagyok, a mai napig felvillanyoz amikor szabadidőmben a logikai pozitivizmussal, tudományfilozófiával, vagy etikával foglalkozhatok. Aktuális kedvenc gondolkodóim közé tartozik Aquinói Szent Tamás, Willard Van Orman Quine és Polányi Mihály. A FiloMento-ban a filozófiatörténeti betekintések mellett nagyon fontos számomra a mentorálás: filozófiából emelt érettségit tettem, több alkalommal voltam eredményes OKTV-n, esszé versenyeken — e tapsztalatokat szeretném átadni a magyar filozófusok következő középiskolás generációjának!\""
+      },
+      {
+        "id": "image-1763647880519",
+        "type": "image",
+        "title": "",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1763734185074_FiloMento_PozsgaiCsan_d.jpg",
+        "description": "Csanád a XXXIII. IPO díjátadóján",
+        "imageWidth": 805,
+        "imageHeight": 537
+      }
+    ]
+  },
+  "Konferencia": {
+    "id": "Konferencia",
+    "title": "FiloMento Konferencia",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Áprilisban érkezik az első FiloMento konferencia!",
+        "subtitle": "Regisztráció, legfontosabb tudnivalók, program"
+      },
+      {
+        "id": "embed-1775318866305",
+        "type": "embed",
+        "title": "Regisztráció:",
+        "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdx7hcLs_xPK5RnzZ48FEvOLGwn7j-CVPDGLTEPLB0U1Dza9A/viewform?usp=dialog",
+        "height": 1880
+      },
+      {
+        "id": "text-1772911918799",
+        "type": "text",
+        "title": "",
+        "content": "Időpont: Április 10.-11.\nHelyszín: ELTE BTK A épület 047-es terem\n\n\nFigyelem! Várjuk BA, MA, MSc vagy PhD hallgatók jelentkezését előadóknak! Ha érdeklődsz a lehetőség iránt, küldj egy emailt a filozofinformacio@gmail.com címre!\n"
+      },
+      {
+        "id": "image-1772911940816",
+        "type": "image",
+        "title": "",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1772912016902_plak_t_konferencia_2026.png",
+        "description": "Kérjük terjessze a FiloMento konferencia hírét Ön is, filozófiai érdeklődésű kollégái, barátai körében!",
+        "imageWidth": 403,
+        "imageHeight": 735
+      },
+      {
+        "id": "image-1775224051521",
+        "type": "image",
+        "title": "Kép",
+        "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1775821071444_FiloMento_KonferenciaProgram3_k_p.jpg",
+        "description": "A konferencia tervezett programja. A programváltozás jogát fenntartjuk. - A Szervezők",
+        "imageWidth": 1756,
+        "imageHeight": 1242
+      }
+    ]
+  },
+  "adatkezeles": {
+    "id": "adatkezeles",
+    "title": "Adatkezelési tájékoztató",
+    "sections": [
+      {
+        "id": "hero-adatkezeles",
+        "type": "hero",
+        "title": "Adatkezelési tájékoztató",
+        "subtitle": "Tájékoztató a FiloMento mentorprogram adatkezelési gyakorlatáról"
+      },
+      {
+        "id": "text-adatkezelo",
+        "type": "text",
+        "title": "1. Az adatkezelő",
+        "content": "A FiloMento mentorprogram önkéntes alapon működő, nem bejegyzett kezdeményezés, melynek szervezői magyar felsőoktatási intézmények hallgatói. Adatkezeléssel kapcsolatos megkereséseidet az alábbi elérhetőségre küldheted:\n\nE-mail: filozofinformacio@gmail.com"
+      },
+      {
+        "id": "text-kezelt-adatok",
+        "type": "text",
+        "title": "2. Kezelt adatok, célok és jogalapok",
+        "content": "Jelentkezési adatok (Google Forms)\nA programra való jelentkezés során az alábbi személyes adatokat kérjük el: név, e-mail cím, egyéb elérhetőség, iskola neve, évfolyam, életkor, érdeklődési területek, a programról való értesülés forrása, rendelkezésre állás és jövőbeli tervek.\n\nAz adatkezelés célja: a jelentkezők értékelése és kiválasztása, a felvételi döntés közlése, a felvett résztvevőkkel való kapcsolattartás és a program megszervezése.\n\nJogalap: a Google Forms kitöltésekor a jelölőnégyzetek bejelölésével adott önkéntes hozzájárulásod [GDPR 6. cikk (1) bekezdés a) pont].\n\nKapcsolatfelvétel (e-mail)\nHa e-mailben keresed meg szervezőinket, az üzenetedben szereplő személyes adatokat kizárólag a kapcsolattartás céljából kezeljük.\n\nJogalap: önkéntes hozzájárulás [GDPR 6. cikk (1) bekezdés a) pont]."
+      },
+      {
+        "id": "text-megorzesi-ido",
+        "type": "text",
+        "title": "3. Adatmegőrzési idő",
+        "content": "A be nem vett jelentkezők adatait a döntés meghozatalát követő 30 napon belül töröljük.\n\nA felvett résztvevők adatait a program lezárultát követő legfeljebb 1 évig kezeljük.\n\nAz e-mail levelezést a kapcsolatfelvételtől számított 1 évig őrizzük.\n\nAz adatok törlését bármikor kérheted a filozofinformacio@gmail.com e-mail-címen."
+      },
+      {
+        "id": "text-adatfeldolgozok",
+        "type": "text",
+        "title": "4. Adatfeldolgozók",
+        "content": "Az adatok kezeléséhez az alábbi külső szolgáltatókat vesszük igénybe:\n\nGoogle LLC – a jelentkezési adatok fogadása és tárolása Google Forms-on keresztül, valamint a szervezők belső e-mail kommunikációja. Google adatvédelmi irányelvek: policies.google.com/privacy\n\nGitHub Inc. – a weboldal képeinek és statikus fájljainak tárolása. GitHub adatvédelmi tájékoztató: docs.github.com/en/site-policy/privacy-policies"
+      },
+      {
+        "id": "text-jogok",
+        "type": "text",
+        "title": "5. Az érintett jogai",
+        "content": "Az Európai Unió általános adatvédelmi rendelete (GDPR) alapján az alábbi jogok illetnek meg:\n\nHozzáférési jog – tájékoztatást kérhetsz az általunk kezelt adataidról.\n\nHelyesbítési jog – kérheted a pontatlan vagy hiányos adataid javítását.\n\nTörlési jog – kérheted adataid törlését, ha az adatkezelés célja megszűnt, vagy hozzájárulásodat visszavonod.\n\nAz adatkezelés korlátozásához való jog – kérheted, hogy az adataid kezelését korlátozzuk.\n\nAdathordozhatósághoz való jog – kérheted az adataid géppel olvasható formátumban való kiadását.\n\nTiltakozási jog – tiltakozhatsz az adatkezelés ellen.\n\nJogaid gyakorlásához küldj e-mailt a filozofinformacio@gmail.com-ra. Megkeresésedre 30 napon belül válaszolunk."
+      },
+      {
+        "id": "text-panasz",
+        "type": "text",
+        "title": "6. Panasztétel",
+        "content": "Ha úgy érzed, hogy adatkezelésünk nem felel meg a hatályos jogszabályoknak, panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH):\n\nCím: 1055 Budapest, Falk Miksa utca 9-11.\nE-mail: ugyfelszolgalat@naih.hu\nWeboldal: naih.hu"
+      },
+      {
+        "id": "text-hatalyba-lepes",
+        "type": "text",
+        "title": "7. Hatályba lépés és módosítás",
+        "content": "Jelen adatkezelési tájékoztató 2026. május 1-jén lép hatályba. A FiloMento mentorprogram fenntartja a jogot a tájékoztató módosítására; lényeges változás esetén az oldalon tájékoztatjuk az érintetteket."
       }
     ]
   }
