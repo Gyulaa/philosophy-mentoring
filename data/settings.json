@@ -57,7 +57,7 @@
       "id": "Conference",
       "label": "Conference",
       "href": "/conference",
-      "visible": true,
+      "visible": false,
       "order": 8
     }
   ]
