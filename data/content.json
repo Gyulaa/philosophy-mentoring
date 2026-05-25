@@ -298,13 +298,13 @@
   },
   "Conference": {
     "id": "Conference",
-    "title": "Conference",
+    "title": "\"Knowledge and Society\" — nemzetközi konferencia az ELTE-n",
     "sections": [
       {
         "id": "hero",
         "type": "hero",
-        "title": "Conference",
-        "subtitle": ""
+        "title": "...",
+        "subtitle": "..."
       }
     ]
   }
