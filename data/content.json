@@ -219,21 +219,8 @@
       {
         "id": "hero",
         "type": "hero",
-        "title": "Áprilisban érkezik az első FiloMento konferencia!",
-        "subtitle": "Regisztráció, legfontosabb tudnivalók, program"
-      },
-      {
-        "id": "embed-1775318866305",
-        "type": "embed",
-        "title": "Regisztráció:",
-        "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdx7hcLs_xPK5RnzZ48FEvOLGwn7j-CVPDGLTEPLB0U1Dza9A/viewform?usp=dialog",
-        "height": 1880
-      },
-      {
-        "id": "text-1772911918799",
-        "type": "text",
-        "title": "",
-        "content": "Időpont: Április 10.-11.\nHelyszín: ELTE BTK A épület 047-es terem\n\n\nFigyelem! Várjuk BA, MA, MSc vagy PhD hallgatók jelentkezését előadóknak! Ha érdeklődsz a lehetőség iránt, küldj egy emailt a filozofinformacio@gmail.com címre!\n"
+        "title": "2026 Áprilisában zajlott le az első FiloMento konferencia!",
+        "subtitle": "Ezúton is köszönjük előadóink részvételét és érdekes prezentációit!"
       },
       {
         "id": "image-1772911940816",
@@ -249,7 +236,7 @@
         "type": "image",
         "title": "Kép",
         "imageUrl": "https://raw.githubusercontent.com/Gyulaa/philosophy-mentoring/main/public/uploads/1775821071444_FiloMento_KonferenciaProgram3_k_p.jpg",
-        "description": "A konferencia tervezett programja. A programváltozás jogát fenntartjuk. - A Szervezők",
+        "description": "A konferencia programja.",
         "imageWidth": 1756,
         "imageHeight": 1242
       }
