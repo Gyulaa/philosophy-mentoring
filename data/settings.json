@@ -57,7 +57,7 @@
       "id": "Conference",
       "label": "\"Knowledge and Society\" — nemzetközi konferencia az ELTE-n",
       "href": "/conference",
-      "visible": true,
+      "visible": false,
       "order": 8
     }
   ]
