@@ -52,6 +52,13 @@
       "href": "/adatkezeles",
       "visible": false,
       "order": 7
+    },
+    {
+      "id": "Conference",
+      "label": "Conference",
+      "href": "/conference",
+      "visible": true,
+      "order": 8
     }
   ]
 }
