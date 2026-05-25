@@ -295,17 +295,5 @@
         "content": "Jelen adatkezelési tájékoztató 2026. május 1-jén lép hatályba. A FiloMento mentorprogram fenntartja a jogot a tájékoztató módosítására; lényeges változás esetén az oldalon tájékoztatjuk az érintetteket."
       }
     ]
-  },
-  "Conference": {
-    "id": "Conference",
-    "title": "\"Knowledge and Society\" — nemzetközi konferencia az ELTE-n",
-    "sections": [
-      {
-        "id": "hero",
-        "type": "hero",
-        "title": "\"Knowledge and Society\" — nemzetközi konferencia az ELTE-n",
-        "subtitle": ""
-      }
-    ]
   }
 }
