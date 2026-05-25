@@ -295,5 +295,17 @@
         "content": "Jelen adatkezelési tájékoztató 2026. május 1-jén lép hatályba. A FiloMento mentorprogram fenntartja a jogot a tájékoztató módosítására; lényeges változás esetén az oldalon tájékoztatjuk az érintetteket."
       }
     ]
+  },
+  "Conference": {
+    "id": "Conference",
+    "title": "Conference",
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "title": "Conference",
+        "subtitle": ""
+      }
+    ]
   }
 }
