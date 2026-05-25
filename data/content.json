@@ -304,7 +304,13 @@
         "id": "hero",
         "type": "hero",
         "title": "\"Knowledge and Society\" — nemzetközi konferencia az ELTE-n",
-        "subtitle": "A FiloMento nemzetközi filozófiai szimpóziumot szervez az ELTE-re, \"Philosophium\" projekttel karölteve!"
+        "subtitle": "A FiloMento nemzetközi filozófiai szimpóziumot szervez az ELTE-re, a \"Philosophium\" projekttel karölteve!"
+      },
+      {
+        "id": "text-1779717757045",
+        "type": "text",
+        "title": "Új szekció",
+        "content": ""
       }
     ]
   }
