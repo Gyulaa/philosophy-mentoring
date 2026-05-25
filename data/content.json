@@ -99,12 +99,12 @@
   },
   "jelentkezes": {
     "id": "jelentkezes",
-    "title": "Megnyílt az előjelentkezés a 2026/27-es tanévre!",
+    "title": "Jelentkezés",
     "sections": [
       {
         "id": "hero",
         "type": "hero",
-        "title": "Jelentkezz a programra!",
+        "title": "Megnyílt az előjelentkezés a 2026/27-es tanévre!",
         "subtitle": "Fedezd fel a filozófia világát egy középiskolásoknak szóló, interaktív online mentorprogram keretében!"
       },
       {
