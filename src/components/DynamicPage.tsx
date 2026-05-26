@@ -10,12 +10,12 @@ function SectionRenderer({ section }: { section: ContentSection }) {
   switch (section.type) {
     case 'hero':
       return (
-        <section className="hero-bg text-white py-20 md:py-32">
-          <div className="container mx-auto px-6">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">
+        <section className="hero-bg text-white">
+          <div className="container mx-auto px-4 sm:px-6">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-center">
               {section.title || 'Gondolkodj velünk!'}
             </h1>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto text-center">
+            <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-center">
               {section.subtitle || section.content || 'Fedezd fel a filozófia világát egy középiskolásoknak szóló, interaktív online mentorprogram keretében.'}
             </p>
           </div>
@@ -24,9 +24,9 @@ function SectionRenderer({ section }: { section: ContentSection }) {
 
     case 'text':
       return (
-        <div className="space-y-6 text-lg leading-relaxed text-gray-700">
+        <div className="space-y-6 text-base sm:text-lg leading-relaxed text-gray-700">
           {section.title && (
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-gray-900">
               {section.title}
             </h2>
           )}
@@ -122,7 +122,7 @@ function SectionRenderer({ section }: { section: ContentSection }) {
 
     case 'image':
       return (
-        <div className="flex justify-center my-10 md:my-14">
+        <div className="flex justify-center my-8 md:my-14">
           {section.imageUrl && (() => {
             let src = section.imageUrl as string
             const match = src.match(/drive\.google\.com\/file\/d\/([^/]+)\//)
@@ -139,8 +139,7 @@ function SectionRenderer({ section }: { section: ContentSection }) {
                   alt={section.title || ''}
                   width={width}
                   height={height || undefined}
-                  className="rounded"
-                  style={{ width: `${width}px`, height: height ? `${height}px` : 'auto' }}
+                  className="rounded w-full h-auto"
                   referrerPolicy="no-referrer"
                 />
                 {section.description && (
@@ -166,8 +165,8 @@ export default function DynamicPage({ pageContent }: DynamicPageProps) {
     <>
       {heroSection && <SectionRenderer section={heroSection} />}
       
-      <main className="py-16 md:py-24">
-        <div className="container mx-auto px-6">
+      <main className="py-8 md:py-24">
+        <div className="container mx-auto px-3 sm:px-6">
           <div className="max-w-4xl mx-auto content-card">
             {contentSections.map((section, index) => (
               <div key={section.id} className={index > 0 && section.type === 'info-box' ? 'mt-12 md:mt-12' : ''}>

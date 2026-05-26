@@ -60,16 +60,19 @@ h3 {
     url("/assets/banner.jpg");
   background-size: cover;
   background-position: 50% 30%;
-  justify-content: flex-end !important;
-  padding-bottom: 5rem;
-  padding-top: 10rem;
-}
-/* Hero section with flexbox for vertical positioning */
-.hero-bg {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-end !important; /* positions content at bottom */
-  align-items: center !important; /* centers content horizontally */
+  justify-content: flex-end !important;
+  align-items: center !important;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-bg {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .hero-text-bottom {
@@ -97,7 +100,16 @@ h3 {
 
 /* Content Card */
 .content-card {
-  @apply bg-white p-8 md:p-12 rounded-lg shadow-lg;
+  @apply bg-white rounded-lg shadow-lg;
+  padding: 1.25rem;
+}
+
+@media (min-width: 480px) {
+  .content-card { padding: 1.75rem; }
+}
+
+@media (min-width: 768px) {
+  .content-card { padding: 3rem; }
 }
 
 /* Additional utility classes */
@@ -134,11 +146,6 @@ h3 {
 }
 
 /* Responsive typography */
-@media (max-width: 768px) {
-  .content-card {
-    @apply p-6;
-  }
-}
 
 /* Focus states for accessibility */
 .nav-link:focus,
